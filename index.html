@@ -10,7 +10,7 @@
     />
   </head>
   <nav
-    class="z-50 md:text-base text-sm font-livvic font-bold fixed container w-full md:top-8 top-4 starting:h-auto h-fit mx-auto right-1/2 translate-x-1/2"
+    class="z-50 md:text-base text-sm font-livvic font-semibold fixed container w-full md:top-8 top-4 starting:h-auto h-fit mx-auto right-1/2 translate-x-1/2"
   >
     <div
       class="bg-white w-fit mx-auto md:py-5 py-3.5 transition-all ease-in-out duration-300 rounded-lg flex justify-between items-center md:px-8 px-4"
@@ -26,17 +26,17 @@
       <div
         class="hidden uppercase lg:flex mx-auto gap-14 items-center justify-center w-fit"
       >
-        <a href="#" class="text-gray-700 hover:text-green-600 transition-colors"
+        <a href="#" class="text-gray-700 hover:text-white transition-colors"
           >Home</a
         >
-        <a href="#" class="text-gray-700 hover:text-green-600 transition-colors"
+        <a href="#" class="text-gray-700 hover:text-white transition-colors"
           >About Us</a
         >
 
         <!-- Desktop Dropdown -->
         <div class="relative group">
           <button
-            class="flex items-center gap-3 cursor-pointer text-gray-700 uppercase hover:text-green-600 transition-colors"
+            class="flex items-center gap-3 cursor-pointer text-gray-700 uppercase hover:text-white transition-colors"
           >
             Product
             <svg
@@ -70,10 +70,10 @@
           </div>
         </div>
 
-        <a href="#" class="text-gray-700 hover:text-green-600 transition-colors"
+        <a href="#" class="text-gray-700 hover:text-white transition-colors"
           >Blog</a
         >
-        <a href="#" class="text-gray-700 hover:text-green-600 transition-colors"
+        <a href="#" class="text-gray-700 hover:text-white transition-colors"
           >Contact Us</a
         >
       </div>
@@ -130,24 +130,23 @@
     <!-- Mobile Menu -->
     <div
       id="mobile-menu"
-      class="lg:hidden bg-white overflow-hidden mt-1 rounded-lg transition-all duration-300 ease-in-out max-h-0"
+      class="lg:hidden bg-white overflow-hidden mt-1.5 px-3 rounded-lg transition-all duration-300 ease-in-out max-h-0"
     >
       <a
         href="#"
-        class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-green-600"
+        class="block px-4 py-2 text-gray-700 hover:bg-secondary rounded-lg hover:text-white"
         >Home</a
       >
       <a
         href="#"
-        class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-green-600"
+        class="block px-4 py-2 text-gray-700 hover:bg-secondary rounded-lg hover:text-white"
         >About Us</a
       >
-
       <!-- Mobile Dropdown -->
       <div class="relative">
         <button
           onclick="toggleMobileDropdown()"
-          class="w-full flex items-center gap-3 text-left px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-green-600"
+          class="w-full flex items-center gap-3 text-left px-4 py-2 text-gray-700 hover:bg-secondary rounded-lg hover:text-white"
         >
           Product
           <svg
@@ -169,15 +168,15 @@
           id="mobile-dropdown"
           class="overflow-hidden transition-all ease-in-out duration-300 max-h-0"
         >
-          <div class="rounded-lg py-2 px-8">
+          <div class="rounded-lg py-2 px-4">
             <a
               href="#"
-              class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-green-600"
+              class="block px-4 py-2 text-gray-700 hover:bg-secondary rounded-lg hover:text-white"
               >Product 1</a
             >
             <a
               href="#"
-              class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-green-600"
+              class="block px-4 py-2 text-gray-700 hover:bg-secondary rounded-lg hover:text-white"
               >Product 2</a
             >
           </div>
@@ -185,12 +184,12 @@
       </div>
       <a
         href="#"
-        class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-green-600"
+        class="block px-4 py-2 text-gray-700 hover:bg-secondary rounded-lg hover:text-white"
         >Blog</a
       >
       <a
         href="#"
-        class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-green-600"
+        class="block px-4 py-2 text-gray-700 hover:bg-secondary rounded-lg hover:text-white"
         >Contact Us</a
       >
     </div>
@@ -382,11 +381,12 @@
     </section>
     <section
       id="mod-2"
-      class="flex flex-col relative items-center justify-center overflow-hidden bg-white lg:py-24 py-14"
+      class="flex flex-col relative items-center justify-center overflow-hidden lg:py-24 py-14 bg-cover bg-center bg-no-repeat"
+      style="background-image: url('./public/assets/Background-Abstract.png')"
     >
-      <div
-        class="box-overlay md:absolute hidden bg-[#D9D9D9]/40 z-10 top-0 left-0 w-[40rem] h-[30rem]"
-      ></div>
+      <!-- <div
+        class="box-overlay md:absolute hidden bg-[#D9D9D9]/40 z-50 top-0 left-0 w-[40rem] h-[30rem]"
+      ></div> -->
       <div
         class="container flex flex-col lg:space-y-24 space-y-12 w-full relative z-20"
       >
@@ -434,19 +434,21 @@
                   from classic to special.
                 </div>
                 <div class="footer w-full relative z-20 mt-auto">
-                  <button
-                    class="relative overflow-hidden md:px-6 px-4 md:py-2.5 py-2 bg-secondary rounded-full text-white hover:bg-accent-primary font-medium transition-all duration-300 hover:scale-[1.02] active:scale-95 group"
-                  >
-                    <span
-                      class="relative z-30 md:text-lg text-sm uppercase flex items-center gap-3"
-                      >Review
-                      <img
-                        src="./public/assets/right-arrow.svg"
-                        class="md:w-[2rem] w-[1.5rem]"
-                        alt=""
-                      />
-                    </span>
-                  </button>
+                  <a href="">
+                    <button
+                      class="relative cursor-pointer overflow-hidden md:px-6 px-4 md:py-2.5 py-2 bg-secondary rounded-full text-white hover:bg-accent-primary font-medium transition-all duration-300 active:scale-95 group"
+                    >
+                      <span
+                        class="relative z-30 md:text-lg text-sm uppercase flex items-center gap-3"
+                        >Review
+                        <img
+                          src="./public/assets/right-arrow.svg"
+                          class="md:w-[2rem] w-[1.5rem]"
+                          alt=""
+                        />
+                      </span>
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -478,19 +480,21 @@
                   to support Turkish industry.
                 </div>
                 <div class="footer w-full relative z-20 mt-auto">
-                  <button
-                    class="relative overflow-hidden md:px-6 px-4 md:py-2.5 py-2 bg-secondary rounded-full text-white hover:bg-accent-primary font-medium transition-all duration-300 hover:scale-[1.02] active:scale-95 group"
-                  >
-                    <span
-                      class="relative z-30 md:text-lg text-sm uppercase flex items-center gap-3"
-                      >Review
-                      <img
-                        src="./public/assets/right-arrow.svg"
-                        class="md:w-[2rem] w-[1.5rem]"
-                        alt=""
-                      />
-                    </span>
-                  </button>
+                  <a href="">
+                    <button
+                      class="relative cursor-pointer overflow-hidden md:px-6 px-4 md:py-2.5 py-2 bg-secondary rounded-full text-white hover:bg-accent-primary font-medium transition-all duration-300 active:scale-95 group"
+                    >
+                      <span
+                        class="relative z-30 md:text-lg text-sm uppercase flex items-center gap-3"
+                        >Review
+                        <img
+                          src="./public/assets/right-arrow.svg"
+                          class="md:w-[2rem] w-[1.5rem]"
+                          alt=""
+                        />
+                      </span>
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -525,63 +529,21 @@
                   from classic to special.
                 </div>
                 <div class="footer w-full relative z-20 mt-auto">
-                  <button
-                    class="relative overflow-hidden md:px-6 px-4 md:py-2.5 py-2 bg-secondary rounded-full text-white hover:bg-accent-primary font-medium transition-all duration-300 hover:scale-[1.02] active:scale-95 group"
-                  >
-                    <span
-                      class="relative z-30 md:text-lg text-sm uppercase flex items-center gap-3"
-                      >Review
-                      <img
-                        src="./public/assets/right-arrow.svg"
-                        class="md:w-[2rem] w-[1.5rem]"
-                        alt=""
-                      />
-                    </span>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div
-                class="card rounded-3xl overflow-hidden group lg:h-[25rem] md:h-[22rem] h-[18rem] w-full flex items-center relative flex-col justify-center lg:px-16 px-8 lg:py-12 py-6 gap-10 before:absolute before:inset-0 before:bg-black/60 before:z-10"
-              >
-                <img
-                  src="./public/assets/image-28.png"
-                  class="absolute inset-0 w-full h-full group-hover:scale-125 transition-all ease-in-out duration-500 object-cover z-0"
-                  alt="Background"
-                />
-                <div
-                  class="header flex items-center justify-between w-full relative z-20"
-                >
-                  <p
-                    class="lg:text-xl md:text-lg text-base uppercase font-semibold"
-                  >
-                    Industrial Products
-                  </p>
-                  <span class="lg:w-[3rem] w-[2rem]"
-                    ><img src="./public/assets/industrial.svg" alt=""
-                  /></span>
-                </div>
-                <div
-                  class="body w-full md:text-lg text-sm relative z-20 line-clamp-4"
-                >
-                  With our extensive range of industrial products, we continue
-                  to support Turkish industry.
-                </div>
-                <div class="footer w-full relative z-20 mt-auto">
-                  <button
-                    class="relative overflow-hidden md:px-6 px-4 md:py-2.5 py-2 bg-secondary rounded-full text-white hover:bg-accent-primary font-medium transition-all duration-300 hover:scale-[1.02] active:scale-95 group"
-                  >
-                    <span
-                      class="relative z-30 md:text-lg text-sm uppercase flex items-center gap-3"
-                      >Review
-                      <img
-                        src="./public/assets/right-arrow.svg"
-                        class="md:w-[2rem] w-[1.5rem]"
-                        alt=""
-                      />
-                    </span>
-                  </button>
+                  <a href="">
+                    <button
+                      class="relative cursor-pointer overflow-hidden md:px-6 px-4 md:py-2.5 py-2 bg-secondary rounded-full text-white hover:bg-accent-primary font-medium transition-all duration-300 active:scale-95 group"
+                    >
+                      <span
+                        class="relative z-30 md:text-lg text-sm uppercase flex items-center gap-3"
+                        >Review
+                        <img
+                          src="./public/assets/right-arrow.svg"
+                          class="md:w-[2rem] w-[1.5rem]"
+                          alt=""
+                        />
+                      </span>
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -594,6 +556,47 @@
         </div>
       </div>
     </section>
+    <section
+      id="mod-3"
+      class="flex flex-col relative items-center justify-center overflow-hidden lg:py-36 py-14 bg-cover bg-center bg-no-repeat"
+      style="
+        background: linear-gradient(
+            90deg,
+            #64903a -0.7%,
+            #263c28 -0.69%,
+            rgba(0, 0, 0, 0) 100%,
+            rgba(38, 60, 40, 0.22) 100%
+          ),
+          linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.15) 0%,
+            rgba(0, 0, 0, 0.15) 100%
+          ),
+          url(./public/assets/image.png) lightgray 50% / cover no-repeat;
+      "
+    >
+      <div
+        class="container font-semibold flex md:flex-row md:gap-0 gap-6 flex-col justify-center items-center w-full md:justify-between"
+      >
+        <p
+          class="text-white md:w-[50%] lg:text-5xl md:text-2xl text-base md:text-start text-center font-semibold font-livvic leading-normal"
+        >
+          <span class="text-secondary">Agriculture.</span> Driving Progress
+          Toward a Greener and Healthier Future
+        </p>
+        <div class="play-button md:w-[50%] md:place-items-end">
+          <div
+            class="lg:w-24 md:w-18 md:h-18 w-12 lg:h-24 h-12 rounded-full flex items-center justify-center outline-1 outline-white"
+          >
+            <div
+              class="lg:w-12 w-6 md:w-9 md:h-9 lg:h-12 h-6 bg-white rounded-full flex items-center justify-center"
+            >
+              <img src="./public/assets/playbtn.svg" class="w-full" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./public/js/swiper.js"></script>
@@ -602,7 +605,7 @@
       const mobileMenu = document.getElementById("mobile-menu");
       mobileMenu.classList.toggle("max-h-0");
       mobileMenu.classList.toggle("max-h-screen");
-      mobileMenu.classList.toggle("pb-4");
+      mobileMenu.classList.toggle("py-2");
       mobileMenu.classList.toggle("rounded-b-lg");
     }
 
