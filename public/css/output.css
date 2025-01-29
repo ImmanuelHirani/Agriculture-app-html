@@ -3493,3 +3493,12 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-contain-style {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-content {
+  syntax: "*";
+  initial-value: "";
+  inherits: false;
+}

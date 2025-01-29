@@ -25,7 +25,7 @@ var swiper = new Swiper(".mod-2-swiper", {
   speed: 800, // Slide transition speed
 
   autoplay: {
-    delay: 12000, // Delay between autoplay slides
+    delay: 5000, // Delay between autoplay slides
   },
 
   navigation: {
