@@ -3,12 +3,16 @@ const mod1Swiper = new Swiper(".mod-1-swiper", {
   speed: 650, // Optimal balance between speed and smoothness
   parallax: true,
   // autoHeight: true, // Responsive height adjustment
-  // watchSlidesProgress: true,
+  watchSlidesProgress: true,
   resistanceRatio: 0.5, // Improved touch/swipe resistance
-  // updateOnWindowResize: true,
-  // observer: true,
-  // observeParents: true,
-  // observeSlideChildren: true,
+  updateOnWindowResize: true,
+  observer: true,
+  observeParents: true,
+  observeSlideChildren: true,
+
+  lazy: {
+    loadPrevNext: true,
+  },
 
   // Navigation enhancements
   navigation: {
@@ -107,6 +111,10 @@ const mod2Swiper = new Swiper(".mod-2-swiper", {
     // disabledClass: "swiper-button-disabled opacity-50 pointer-events-none",
   },
 
+  lazy: {
+    loadPrevNext: true,
+  },
+
   // Pagination improvements
   pagination: {
     el: ".pagination-mod-2",
@@ -187,3 +195,82 @@ const mod2Swiper = new Swiper(".mod-2-swiper", {
   longSwipesRatio: 0.5,
   grabCursor: true,
 });
+
+const mod5Swiper = new Swiper(".mod-5-swiper", {
+  // Infinite loop configuration
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 30,
+
+  // Autoplay configuration
+  // autoplay: {
+  //   delay: 1, // Minimal delay for continuous movement
+  //   disableOnInteraction: false,
+  //   pauseOnMouseEnter: true,
+  //   waitForTransition: false, // Don't wait for transition to complete
+  // },
+
+  // Speed configuration for smooth continuous movement
+  speed: 2000, // Match this with CSS transition duration
+  // followFinger: false,
+  // allowTouchMove: false,
+
+  // Core configuration
+  autoHeight: true,
+  resistanceRatio: 0,
+  updateOnWindowResize: true,
+  observer: true,
+  observeParents: true,
+
+  // Responsive breakpoints
+  breakpoints: {
+    360: {
+      // Mobile-first
+      slidesPerView: 1.2,
+      spaceBetween: 8,
+      centeredSlides: true,
+    },
+    768: {
+      // Tablet
+      slidesPerView: 1.5,
+      spaceBetween: 14,
+      centeredSlides: true,
+    },
+    1024: {
+      // Desktop
+      slidesPerView: 1.5,
+      spaceBetween: 24,
+      centeredSlides: false,
+    },
+    1280: {
+      // Large desktop
+      slidesPerView: 4,
+      spaceBetween: 18,
+      // slidesPerGroup: 2,
+    },
+  },
+
+  // Transition effects
+  effect: "slide",
+  grabCursor: true,
+
+  // Disable manual control features
+  // noSwiping: true,
+  // noSwipingClass: "swiper-slide",
+});
+
+// Force continuous autoplay reset
+// mod5Swiper.on("slideChange", function () {
+//   if (!this.autoplay.running) {
+//     this.autoplay.start();
+//   }
+// });
+
+// // Manual hover control (extra insurance)
+// const swiperContainer = document.querySelector(".mod-5-swiper");
+// swiperContainer.addEventListener("mouseenter", () => {
+//   mod5Swiper.autoplay.stop();
+// });
+// swiperContainer.addEventListener("mouseleave", () => {
+//   mod5Swiper.autoplay.start();
+// });

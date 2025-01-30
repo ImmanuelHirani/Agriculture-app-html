@@ -8,12 +8,19 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
+  <!-- Navbar -->
   <nav
-    class="z-50 md:text-base text-sm font-livvic font-semibold fixed container w-full md:top-8 top-4 starting:h-auto h-fit mx-auto right-1/2 translate-x-1/2"
+    class="z-50 md:text-base text-sm font-semibold fixed container w-full md:top-8 top-4 starting:h-auto h-fit mx-auto right-1/2 translate-x-1/2"
   >
     <div
-      class="bg-white w-fit mx-auto md:py-5 py-3.5 transition-all ease-in-out duration-300 rounded-lg flex justify-between items-center md:px-8 px-4"
+      class="bg-white w-fit mx-auto shadow-2xl md:py-5 py-3.5 transition-all ease-in-out duration-300 rounded-lg flex justify-between items-center md:px-8 px-4"
     >
       <div class="flex items-center space-x-3 md:w-[17%] w-[45%]">
         <img
@@ -26,17 +33,21 @@
       <div
         class="hidden uppercase lg:flex mx-auto gap-14 items-center justify-center w-fit"
       >
-        <a href="#" class="text-gray-700 hover:text-white transition-colors"
+        <a
+          href="#"
+          class="text-accent-primary hover:text-secondary transition-colors"
           >Home</a
         >
-        <a href="#" class="text-gray-700 hover:text-white transition-colors"
+        <a
+          href="#"
+          class="text-accent-primary hover:text-secondary transition-colors"
           >About Us</a
         >
 
         <!-- Desktop Dropdown -->
         <div class="relative group">
           <button
-            class="flex items-center gap-3 cursor-pointer text-gray-700 uppercase hover:text-white transition-colors"
+            class="flex items-center gap-3 cursor-pointer text-accent-primary uppercase hover:text-secondary transition-colors"
           >
             Product
             <svg
@@ -70,10 +81,14 @@
           </div>
         </div>
 
-        <a href="#" class="text-gray-700 hover:text-white transition-colors"
+        <a
+          href="#"
+          class="text-accent-primary hover:text-secondary transition-colors"
           >Blog</a
         >
-        <a href="#" class="text-gray-700 hover:text-white transition-colors"
+        <a
+          href="#"
+          class="text-accent-primary hover:text-secondary transition-colors"
           >Contact Us</a
         >
       </div>
@@ -195,6 +210,7 @@
     </div>
   </nav>
   <body>
+    <!-- Hero section -->
     <section id=" mod-1" class="h-lvh !mt-0 overflow-hidden">
       <div
         style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
@@ -379,6 +395,7 @@
         </div>
       </div>
     </section>
+    <!-- company short intro -->
     <section
       id="mod-2"
       class="flex flex-col relative items-center justify-center overflow-hidden lg:py-24 py-14 bg-cover bg-center bg-no-repeat"
@@ -391,7 +408,7 @@
         class="container flex flex-col lg:space-y-24 space-y-12 w-full relative z-20"
       >
         <p
-          class="text-secondary lg:text-5xl md:text-2xl text-xl lg:text-start font-semibold text-center font-livvic leading-relaxed"
+          class="text-secondary lg:text-5xl md:text-3xl text-xl md:text-start font-semibold text-center leading-relaxed"
         >
           We preserve the power of nature, adding abundance to the future.
         </p>
@@ -425,7 +442,7 @@
                   /></span>
                 </div>
                 <div
-                  class="body w-full md:text-lg text-sm relative z-20 line-clamp-4"
+                  class="body w-full md:text-base text-sm relative z-20 line-clamp-4"
                 >
                   We aim to increase the productivity and quality of Turkish
                   agriculture with our rich fertilizer range. We provide
@@ -474,7 +491,7 @@
                   /></span>
                 </div>
                 <div
-                  class="body w-full md:text-lg text-sm relative z-20 line-clamp-4"
+                  class="body w-full md:text-base text-sm relative z-20 line-clamp-4"
                 >
                   With our extensive range of industrial products, we continue
                   to support Turkish industry.
@@ -520,7 +537,7 @@
                   /></span>
                 </div>
                 <div
-                  class="body w-full md:text-lg text-sm relative z-20 line-clamp-4"
+                  class="body w-full md:text-base text-sm relative z-20 line-clamp-4"
                 >
                   We aim to increase the productivity and quality of Turkish
                   agriculture with our rich fertilizer range. We provide
@@ -556,9 +573,10 @@
         </div>
       </div>
     </section>
+    <!-- Vidio -->
     <section
       id="mod-3"
-      class="flex flex-col relative items-center justify-center overflow-hidden lg:py-36 py-14 bg-cover bg-center bg-no-repeat"
+      class="flex flex-col relative items-center justify-center overflow-hidden md:py-36 py-14 bg-cover bg-center bg-no-repeat"
       style="
         background: linear-gradient(
             90deg,
@@ -579,7 +597,7 @@
         class="container font-semibold flex md:flex-row md:gap-0 gap-6 flex-col justify-center items-center w-full md:justify-between"
       >
         <p
-          class="text-white md:w-[50%] lg:text-5xl md:text-2xl text-base md:text-start text-center font-semibold font-livvic leading-normal"
+          class="text-white md:w-[50%] lg:text-5xl md:text-2xl text-base md:text-start text-center font-semibold leading-normal"
         >
           <span class="text-secondary">Agriculture.</span> Driving Progress
           Toward a Greener and Healthier Future
@@ -597,6 +615,279 @@
         </div>
       </div>
     </section>
+    <!-- pilosopi / counting-->
+    <section
+      id="mod-4"
+      class="flex flex-col relative items-center justify-center overflow-hidden lg:py-24 py-14 bg-cover bg-center bg-no-repeat"
+      style="background-image: url('./public/assets/Background-Abstract.png')"
+    >
+      <div class="container lg:space-y-40 space-y-20">
+        <div
+          class="company-part lg:text-5xl md:text-3xl text-xl font-medium flex flex-col lg:space-y-24 md:space-y-14 space-y-8 text-secondary"
+        >
+          <div class="wrap space-y-3">
+            <p class="leading-normal font-light">
+              <span class="font-semibold">(Company name) </span>in numbers with
+              its continuously rising success each year, is
+              <span class="font-semibold">(country name)</span>
+              fertilizer producers.
+            </p>
+          </div>
+          <div class="wrap flex md:justify-between flex-wrap gap-14">
+            <div class="numbering flex flex-col gap-2">
+              <div
+                class="wrap flex items-center gap-3 lg:text-7xl md:text-5xl text-4xl"
+              >
+                <p class="num" data-val="100">0</p>
+                <p class="">+</p>
+              </div>
+              <p class="uppercase md:text-lg text-sm">employee</p>
+            </div>
+            <div class="numbering flex flex-col gap-2">
+              <div
+                class="wrap flex items-center gap-3 lg:text-7xl md:text-5xl text-4xl"
+              >
+                <p class="num" data-val="20">0</p>
+                <p class="">+</p>
+              </div>
+              <p class="uppercase md:text-lg text-sm">FACILITY</p>
+            </div>
+            <div class="numbering flex flex-col gap-2">
+              <div
+                class="wrap flex items-center gap-3 lg:text-7xl md:text-5xl text-4xl"
+              >
+                <p class="num" data-val="50">0</p>
+                <p class="">+</p>
+              </div>
+              <p class="uppercase md:text-lg text-sm">Warehouse</p>
+            </div>
+            <div class="numbering flex flex-col gap-2">
+              <div
+                class="wrap flex items-center gap-3 lg:text-7xl md:text-5xl text-4xl"
+              >
+                <p class="num" data-val="20">0</p>
+                <p>+</p>
+              </div>
+              <p class="uppercase md:text-lg text-sm">years experience</p>
+            </div>
+          </div>
+        </div>
+        <!-- Seperator Content -->
+        <div
+          class="philosofy-part lg:text-5xl md:text-4xl text-2xl font-semibold flex flex-col lg:space-y-24 md:space-y-14 space-y-8 text-secondary"
+        >
+          <div class="wrap">
+            <p class="md:text-2xl text-base text-center font-light">
+              -What Steers Our Services-
+            </p>
+            <p class="leading-normal text-center font-semibold">
+              Our Philosophy
+            </p>
+          </div>
+          <div class="swiper mod-5-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide p-0.5">
+                <div
+                  class="card text-secondary rounded-lg bg-white overflow-hidden group outline-1 w-full outline-gray-400 h-fit flex items-center relative flex-col justify-center p-6 gap-4"
+                >
+                  <div
+                    class="header flex items-center justify-between w-full relative z-20"
+                  >
+                    <p class="text-base uppercase font-semibold">Our Promise</p>
+                    <span
+                      class="w-[2.5rem] h-[2.5rem] p-2 rounded-full place-items-end"
+                      ><img src="./public/assets/ranch.svg" class="" alt=""
+                    /></span>
+                  </div>
+                  <div
+                    class="body w-full font-normal text-justify md:text-base text-sm relative z-20 line-clamp-4"
+                  >
+                    We aim to increase the productivity and quality of (Company)
+                    agriculture with our rich fertilizer range. We provide
+                    reliable and innovative
+                  </div>
+                  <div
+                    class="footer w-full relative flex justify-end z-20 mt-auto"
+                  >
+                    <button
+                      class="relative overflow-hidden font-medium transition-all duration-300 group"
+                    >
+                      01
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide p-0.5">
+                <div
+                  class="card text-secondary rounded-lg bg-white overflow-hidden group outline-1 w-full outline-gray-400 h-fit flex items-center relative flex-col justify-center p-6 gap-4"
+                >
+                  <div
+                    class="header flex items-center justify-between w-full relative z-20"
+                  >
+                    <p class="text-base uppercase font-semibold">Our Promise</p>
+                    <span
+                      class="w-[2.5rem] h-[2.5rem] p-2 rounded-full place-items-end"
+                      ><img src="./public/assets/ranch.svg" class="" alt=""
+                    /></span>
+                  </div>
+                  <div
+                    class="body w-full font-normal text-justify md:text-base text-sm relative z-20 line-clamp-4"
+                  >
+                    We aim to increase the productivity and quality of (Company)
+                    agriculture with our rich fertilizer range. We provide
+                    reliable and innovative
+                  </div>
+                  <div
+                    class="footer w-full relative flex justify-end z-20 mt-auto"
+                  >
+                    <button
+                      class="relative overflow-hidden font-medium transition-all duration-300 group"
+                    >
+                      02
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide p-0.5">
+                <div
+                  class="card text-secondary rounded-lg bg-white overflow-hidden group outline-1 w-full outline-gray-400 h-fit flex items-center relative flex-col justify-center p-6 gap-4"
+                >
+                  <div
+                    class="header flex items-center justify-between w-full relative z-20"
+                  >
+                    <p class="text-base uppercase font-semibold">Our Promise</p>
+                    <span
+                      class="w-[2.5rem] h-[2.5rem] p-2 rounded-full place-items-end"
+                      ><img src="./public/assets/ranch.svg" class="" alt=""
+                    /></span>
+                  </div>
+                  <div
+                    class="body w-full font-normal text-justify md:text-base text-sm relative z-20 line-clamp-4"
+                  >
+                    We aim to increase the productivity and quality of (Company)
+                    agriculture with our rich fertilizer range. We provide
+                    reliable and innovative
+                  </div>
+                  <div
+                    class="footer w-full relative flex justify-end z-20 mt-auto"
+                  >
+                    <button
+                      class="relative overflow-hidden font-medium transition-all duration-300 group"
+                    >
+                      03
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide p-0.5">
+                <div
+                  class="card text-secondary rounded-lg bg-white overflow-hidden group outline-1 w-full outline-gray-400 h-fit flex items-center relative flex-col justify-center p-6 gap-4"
+                >
+                  <div
+                    class="header flex items-center justify-between w-full relative z-20"
+                  >
+                    <p class="text-base uppercase font-semibold">Our Promise</p>
+                    <span
+                      class="w-[2.5rem] h-[2.5rem] p-2 rounded-full place-items-end"
+                      ><img src="./public/assets/ranch.svg" class="" alt=""
+                    /></span>
+                  </div>
+                  <div
+                    class="body w-full font-normal text-justify md:text-base text-sm relative z-20 line-clamp-4"
+                  >
+                    We aim to increase the productivity and quality of (Company)
+                    agriculture with our rich fertilizer range. We provide
+                    reliable and innovative
+                  </div>
+                  <div
+                    class="footer w-full relative flex justify-end z-20 mt-auto"
+                  >
+                    <button
+                      class="relative overflow-hidden font-medium transition-all duration-300 group"
+                    >
+                      04
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Image slider -->
+    <section id="mod-5" class="overflow-hidden">
+      <div
+        class="slider w-[var(--slider-width)] h-[var(--slider-height)]"
+        reverse="true"
+        style="--quantity: 9; --gap: 0px"
+      >
+        <div class="list">
+          <div class="item" style="--position: 1">
+            <img src="./public/assets/image-29.png" class="rounded-lg" alt="" />
+          </div>
+          <div class="item" style="--position: 2">
+            <img src="./public/assets/image-28.png" class="rounded-lg" alt="" />
+          </div>
+          <div class="item" style="--position: 3">
+            <img src="./public/assets/image-29.png" class="rounded-lg" alt="" />
+          </div>
+          <div class="item" style="--position: 4">
+            <img src="./public/assets/image-28.png" class="rounded-lg" alt="" />
+          </div>
+          <div class="item" style="--position: 5">
+            <img src="./public/assets/image-29.png" class="rounded-lg" alt="" />
+          </div>
+          <div class="item" style="--position: 6">
+            <img src="./public/assets/image-28.png" class="rounded-lg" alt="" />
+          </div>
+          <div class="item" style="--position: 7">
+            <img src="./public/assets/image-29.png" class="rounded-lg" alt="" />
+          </div>
+          <div class="item" style="--position: 8">
+            <img src="./public/assets/image-28.png" class="rounded-lg" alt="" />
+          </div>
+          <div class="item" style="--position: 9">
+            <img src="./public/assets/image-29.png" class="rounded-lg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div
+        class="slider w-[var(--slider-width)] h-[var(--slider-height)]"
+        reverse="true"
+        style="--quantity: 9; --gap: 0px"
+      >
+        <div class="list">
+          <div class="item" style="--position: 1">
+            <img src="./public/assets/image-29.png" class="rounded-lg" alt="" />
+          </div>
+          <div class="item" style="--position: 2">
+            <img src="./public/assets/image-28.png" class="rounded-lg" alt="" />
+          </div>
+          <div class="item" style="--position: 3">
+            <img src="./public/assets/image-29.png" class="rounded-lg" alt="" />
+          </div>
+          <div class="item" style="--position: 4">
+            <img src="./public/assets/image-28.png" class="rounded-lg" alt="" />
+          </div>
+          <div class="item" style="--position: 5">
+            <img src="./public/assets/image-29.png" class="rounded-lg" alt="" />
+          </div>
+          <div class="item" style="--position: 6">
+            <img src="./public/assets/image-28.png" class="rounded-lg" alt="" />
+          </div>
+          <div class="item" style="--position: 7">
+            <img src="./public/assets/image-29.png" class="rounded-lg" alt="" />
+          </div>
+          <div class="item" style="--position: 8">
+            <img src="./public/assets/image-28.png" class="rounded-lg" alt="" />
+          </div>
+          <div class="item" style="--position: 9">
+            <img src="./public/assets/image-29.png" class="rounded-lg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./public/js/swiper.js"></script>
@@ -606,6 +897,7 @@
       mobileMenu.classList.toggle("max-h-0");
       mobileMenu.classList.toggle("max-h-screen");
       mobileMenu.classList.toggle("py-2");
+      mobileMenu.classList.toggle("shadow-2xl");
       mobileMenu.classList.toggle("rounded-b-lg");
     }
 
@@ -616,4 +908,5 @@
       dropdown.classList.toggle("opacity-100");
     }
   </script>
+  <script src="./public/js/counter.js"></script>
 </html>
