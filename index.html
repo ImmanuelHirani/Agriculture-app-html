@@ -573,47 +573,66 @@
         </div>
       </div>
     </section>
-    <!-- Vidio -->
-    <section
-      id="mod-3"
-      class="flex flex-col relative items-center justify-center overflow-hidden md:py-36 py-14 bg-cover bg-center bg-no-repeat"
-      style="
-        background: linear-gradient(
-            90deg,
-            #64903a -0.7%,
-            #263c28 -0.69%,
-            rgba(0, 0, 0, 0) 100%,
-            rgba(38, 60, 40, 0.22) 100%
-          ),
-          linear-gradient(
-            0deg,
-            rgba(0, 0, 0, 0.15) 0%,
-            rgba(0, 0, 0, 0.15) 100%
-          ),
-          url(./public/assets/image.png) lightgray 50% / cover no-repeat;
-      "
-    >
-      <div
-        class="container font-semibold flex md:flex-row md:gap-0 gap-6 flex-col justify-center items-center w-full md:justify-between"
-      >
-        <p
-          class="text-white md:w-[50%] lg:text-5xl md:text-2xl text-base md:text-start text-center font-semibold leading-normal"
-        >
-          <span class="text-secondary">Agriculture.</span> Driving Progress
-          Toward a Greener and Healthier Future
-        </p>
-        <div class="play-button md:w-[50%] md:place-items-end">
-          <div
-            class="lg:w-24 md:w-18 md:h-18 w-12 lg:h-24 h-12 rounded-full flex items-center justify-center outline-1 outline-white"
-          >
+    <!-- High Quality Intro -->
+    <section class="bg-accent-secondary relative text-white overflow-hidden">
+      <div class="md:grid grid-cols-12 flex flex-col md:gap-4 items-center">
+        <div class="md:col-span-5">
+          <img
+            src="./public/assets/close-up-box-with-vegetables-hands-mature-man 1.png"
+            alt=""
+            class="h-full w-full"
+          />
+        </div>
+        <div class="md:col-span-7 md:p-24 px-4 py-6 flex flex-col gap-8">
+          <div class="wrap flex flex-col md:gap-3">
+            <p class="md:text-xl text-base font-light">MODERN AGRICULTURE</p>
+            <p class="font-bold md:text-4xl text-xl md:leading-normal">
+              Providing High Quality Products
+            </p>
+          </div>
+          <div class="card flex items-center gap-8">
             <div
-              class="lg:w-12 w-6 md:w-9 md:h-9 lg:h-12 h-6 bg-white rounded-full flex items-center justify-center"
+              class="wrap rounded-full bg-white md:w-[4rem] w-[20%] flex items-center justify-center p-3.5 overflow-hidden"
             >
-              <img src="./public/assets/playbtn.svg" class="w-full" alt="" />
+              <img src="./public/assets/test-1.svg" class="w-full" alt="" />
+            </div>
+            <div class="text md:w-auto w-[80%] space-y-2">
+              <p class="font-semibold md:text-lg text-base">
+                Our Agriculture Growth
+              </p>
+              <p class="font-light text-justify md:text-base text-sm">
+                Lorem ipsum dolor sit amet consectetur. Cursus purus at tempus
+                arcu. Metus elit auctor
+              </p>
+            </div>
+          </div>
+          <hr class="outline-1 opacity-20" />
+          <div class="card flex items-center gap-8">
+            <div
+              class="wrap rounded-full bg-white md:w-[4rem] w-[20%] flex items-center justify-center p-3.5 overflow-hidden"
+            >
+              <img src="./public/assets/test-1.svg" class="w-full" alt="" />
+            </div>
+            <div class="text md:w-auto w-[80%] space-y-2">
+              <p class="font-semibold md:text-lg text-base">
+                Our Agriculture Growth
+              </p>
+              <p class="font-light text-justify md:text-base text-sm">
+                Lorem ipsum dolor sit amet consectetur. Cursus purus at tempus
+                arcu. Metus elit auctor
+              </p>
             </div>
           </div>
         </div>
       </div>
+      <img
+        src="./public/assets/style.png"
+        class="absolute bottom-0 right-0 w-[40%] opacity-30"
+        alt=""
+      />
+      <div
+        class="overlay-q1 md:visible invisible w-[10rem] h-[10rem] rounded-bl-4xl bg-white/50 absolute top-0 right-0"
+      ></div>
     </section>
     <!-- pilosopi / counting-->
     <section
@@ -816,11 +835,15 @@
       </div>
     </section>
     <!-- Image slider -->
-    <section id="mod-5" class="overflow-hidden">
+    <section
+      id="mod-5"
+      class="overflow-hidden bg-cover bg-center bg-no-repeat"
+      style="background-image: url('./public/assets/Background-Abstract.png')"
+    >
       <div
-        class="slider w-[var(--slider-width)] h-[var(--slider-height)]"
+        class="slider w-[var(--slider-width)] bg-transparent h-[var(--slider-height)]"
         reverse="true"
-        style="--quantity: 9; --gap: 0px"
+        style="--quantity: 9"
       >
         <div class="list">
           <div class="item" style="--position: 1">
@@ -855,7 +878,7 @@
       <div
         class="slider w-[var(--slider-width)] h-[var(--slider-height)]"
         reverse="true"
-        style="--quantity: 9; --gap: 0px"
+        style="--quantity: 9"
       >
         <div class="list">
           <div class="item" style="--position: 1">
@@ -884,6 +907,48 @@
           </div>
           <div class="item" style="--position: 9">
             <img src="./public/assets/image-29.png" class="rounded-lg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Vidio -->
+    <section
+      id="mod-3"
+      class="flex flex-col relative items-center justify-center overflow-hidden md:py-36 py-14 bg-cover bg-center bg-no-repeat"
+      style="
+        background: linear-gradient(
+            90deg,
+            #64903a -0.7%,
+            #263c28 -0.69%,
+            rgba(0, 0, 0, 0) 100%,
+            rgba(38, 60, 40, 0.22) 100%
+          ),
+          linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.15) 0%,
+            rgba(0, 0, 0, 0.15) 100%
+          ),
+          url(./public/assets/image.png) lightgray 50% / cover no-repeat;
+      "
+    >
+      <div
+        class="container font-semibold flex md:flex-row md:gap-0 gap-6 flex-col justify-center items-center w-full md:justify-between"
+      >
+        <p
+          class="text-white md:w-[50%] lg:text-5xl md:text-2xl text-base md:text-start text-center font-semibold leading-normal"
+        >
+          <span class="text-secondary">Agriculture.</span> Driving Progress
+          Toward a Greener and Healthier Future
+        </p>
+        <div class="play-button md:w-[50%] md:place-items-end">
+          <div
+            class="lg:w-24 md:w-18 md:h-18 w-12 lg:h-24 h-12 rounded-full flex items-center justify-center outline-1 outline-white"
+          >
+            <div
+              class="lg:w-12 w-6 md:w-9 md:h-9 lg:h-12 h-6 bg-white rounded-full flex items-center justify-center"
+            >
+              <img src="./public/assets/playbtn.svg" class="w-full" alt="" />
+            </div>
           </div>
         </div>
       </div>

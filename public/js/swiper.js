@@ -245,7 +245,7 @@ const mod5Swiper = new Swiper(".mod-5-swiper", {
     1280: {
       // Large desktop
       slidesPerView: 4,
-      spaceBetween: 18,
+      spaceBetween: 8,
       // slidesPerGroup: 2,
     },
   },
