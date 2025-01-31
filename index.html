@@ -141,7 +141,6 @@
         </button>
       </div>
     </div>
-
     <!-- Mobile Menu -->
     <div
       id="mobile-menu"
@@ -575,72 +574,229 @@
     </section>
     <!-- High Quality Intro -->
     <section class="bg-accent-secondary relative text-white overflow-hidden">
-      <div class="md:grid grid-cols-12 flex flex-col md:gap-4 items-center">
-        <div class="md:col-span-5">
+      <div class="md:grid grid-cols-12 flex flex-col items-stretch md:gap-4">
+        <!-- Image Container -->
+        <div class="lg:col-span-5 col-span-12 h-full min-h-[400px] md:min-h-0">
           <img
             src="./public/assets/close-up-box-with-vegetables-hands-mature-man 1.png"
-            alt=""
-            class="h-full w-full"
+            alt="Farmer holding fresh vegetables"
+            class="w-full h-full object-cover object-center"
+            loading="lazy"
           />
         </div>
-        <div class="md:col-span-7 md:p-24 px-4 py-6 flex flex-col gap-8">
-          <div class="wrap flex flex-col md:gap-3">
-            <p class="md:text-xl text-base font-light">MODERN AGRICULTURE</p>
-            <p class="font-bold md:text-4xl text-xl md:leading-normal">
-              Providing High Quality Products
+
+        <!-- Content Section -->
+        <div
+          class="lg:col-span-7 col-span-12 lg:p-24 p-12 p-6 flex flex-col gap-8"
+        >
+          <header class="space-y-2 md:space-y-3">
+            <p class="text-base md:text-xl font-light tracking-wide">
+              MODERN AGRICULTURE
             </p>
-          </div>
-          <div class="card flex items-center gap-8">
-            <div
-              class="wrap rounded-full bg-white md:w-[4rem] w-[20%] flex items-center justify-center p-3.5 overflow-hidden"
+            <h2
+              class="text-xl md:text-4xl font-bold leading-snug md:leading-normal"
             >
-              <img src="./public/assets/test-1.svg" class="w-full" alt="" />
-            </div>
-            <div class="text md:w-auto w-[80%] space-y-2">
-              <p class="font-semibold md:text-lg text-base">
-                Our Agriculture Growth
-              </p>
-              <p class="font-light text-justify md:text-base text-sm">
-                Lorem ipsum dolor sit amet consectetur. Cursus purus at tempus
-                arcu. Metus elit auctor
-              </p>
-            </div>
-          </div>
-          <hr class="outline-1 opacity-20" />
-          <div class="card flex items-center gap-8">
-            <div
-              class="wrap rounded-full bg-white md:w-[4rem] w-[20%] flex items-center justify-center p-3.5 overflow-hidden"
-            >
-              <img src="./public/assets/test-1.svg" class="w-full" alt="" />
-            </div>
-            <div class="text md:w-auto w-[80%] space-y-2">
-              <p class="font-semibold md:text-lg text-base">
-                Our Agriculture Growth
-              </p>
-              <p class="font-light text-justify md:text-base text-sm">
-                Lorem ipsum dolor sit amet consectetur. Cursus purus at tempus
-                arcu. Metus elit auctor
-              </p>
-            </div>
+              Providing High Quality Products
+            </h2>
+          </header>
+
+          <!-- Feature Cards -->
+          <div class="space-y-6">
+            <article class="flex gap-4 md:gap-6 items-start">
+              <div
+                class="bg-white p-3 rounded-full min-w-[3rem] md:min-w-[4rem] flex-shrink-0"
+              >
+                <img
+                  src="./public/assets/test-1.svg"
+                  alt="Growth chart icon"
+                  class="w-6 h-6 md:w-8 md:h-8"
+                />
+              </div>
+              <div class="space-y-1 md:space-y-2">
+                <h3 class="text-base md:text-lg font-semibold">
+                  Our Agriculture Growth
+                </h3>
+                <p class="text-sm md:text-base font-light text-balance">
+                  Lorem ipsum dolor sit amet consectetur. Cursus purus at tempus
+                  arcu. Metus elit auctor
+                </p>
+              </div>
+            </article>
+
+            <hr class="border-white/20" />
+
+            <article class="flex gap-4 md:gap-6 items-start">
+              <div
+                class="bg-white p-3 rounded-full min-w-[3rem] md:min-w-[4rem] flex-shrink-0"
+              >
+                <img
+                  src="./public/assets/test-1.svg"
+                  alt="Quality icon"
+                  class="w-6 h-6 md:w-8 md:h-8"
+                />
+              </div>
+              <div class="space-y-1 md:space-y-2">
+                <h3 class="text-base md:text-lg font-semibold">
+                  Our Agriculture Growth
+                </h3>
+                <p class="text-sm md:text-base font-light text-balance">
+                  Lorem ipsum dolor sit amet consectetur. Cursus purus at tempus
+                  arcu. Metus elit auctor
+                </p>
+              </div>
+            </article>
           </div>
         </div>
+
+        <!-- Decorative Elements -->
+        <img
+          src="./public/assets/style.png"
+          alt=""
+          role="presentation"
+          class="absolute bottom-0 right-0 w-[40%] opacity-30 pointer-events-none"
+        />
+        <div
+          aria-hidden="true"
+          class="hidden md:block w-40 h-40 rounded-bl-4xl bg-white/50 absolute top-0 right-0"
+        ></div>
       </div>
-      <img
-        src="./public/assets/style.png"
-        class="absolute bottom-0 right-0 w-[40%] opacity-30"
-        alt=""
-      />
-      <div
-        class="overlay-q1 md:visible invisible w-[10rem] h-[10rem] rounded-bl-4xl bg-white/50 absolute top-0 right-0"
-      ></div>
     </section>
-    <!-- pilosopi / counting-->
+    <!-- pilosopi / project / counting-->
     <section
       id="mod-4"
       class="flex flex-col relative items-center justify-center overflow-hidden lg:py-24 py-14 bg-cover bg-center bg-no-repeat"
       style="background-image: url('./public/assets/Background-Abstract.png')"
     >
       <div class="container lg:space-y-40 space-y-20">
+        <div
+          class="philosofy-part lg:text-5xl md:text-4xl text-2xl font-semibold flex flex-col lg:space-y-24 md:space-y-14 space-y-8 text-secondary"
+        >
+          <div class="wrap">
+            <p class="md:text-2xl text-base text-center font-light uppercase">
+              RECENTLY COMPLETED WORK
+            </p>
+            <p class="leading-normal text-center font-semibold">
+              Explore Our Projects
+            </p>
+          </div>
+          <div class="swiper mod-6-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide p-0.5">
+                <div
+                  class="card relative text-white rounded-lg bg-white overflow-hidden group w-full h-fit flex items-center flex-col justify-center gap-4"
+                >
+                  <img
+                    src="./public/assets/image 12.png"
+                    class="group-hover:scale-125 transition-all ease-in-out duration-500"
+                    alt=""
+                  />
+
+                  <div
+                    class="body w-full opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-500 gap-6 p-6 bg-black/40 h-full flex flex-col absolute font-normal text-justify md:text-base text-sm z-20 line-clamp-4"
+                  >
+                    <span
+                      class="wrap mt-auto font-semibold md:text-lg text-base"
+                    >
+                      <p class="">Agriculture</p>
+                      <p class="">Natural way of agriculture</p>
+                    </span>
+                    <a
+                      href=""
+                      class="px-6 py-2 bg-secondary hover:bg-accent-primary transition-all ease-in-out duration-300 font-medium rounded-lg text-center"
+                      >See more</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide p-0.5">
+                <div
+                  class="card relative text-white rounded-lg bg-white overflow-hidden group w-full h-fit flex items-center flex-col justify-center gap-4"
+                >
+                  <img
+                    src="./public/assets/image 11.png"
+                    class="group-hover:scale-125 transition-all ease-in-out duration-500"
+                    alt=""
+                  />
+
+                  <div
+                    class="body w-full opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-500 gap-6 p-6 bg-black/40 h-full flex flex-col absolute font-normal text-justify md:text-base text-sm z-20 line-clamp-4"
+                  >
+                    <span
+                      class="wrap mt-auto font-semibold md:text-lg text-base"
+                    >
+                      <p class="">Agriculture</p>
+                      <p class="">Natural way of agriculture</p>
+                    </span>
+                    <a
+                      href=""
+                      class="px-6 py-2 bg-secondary hover:bg-accent-primary transition-all ease-in-out duration-300 font-medium rounded-lg text-center"
+                      >See more</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide p-0.5">
+                <div
+                  class="card relative text-white rounded-lg bg-white overflow-hidden group w-full h-fit flex items-center flex-col justify-center gap-4"
+                >
+                  <img
+                    src="./public/assets/image 13.png"
+                    class="group-hover:scale-125 transition-all ease-in-out duration-500"
+                    alt=""
+                  />
+
+                  <div
+                    class="body w-full opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-500 gap-6 p-6 bg-black/40 h-full flex flex-col absolute font-normal text-justify md:text-base text-sm z-20 line-clamp-4"
+                  >
+                    <span
+                      class="wrap mt-auto font-semibold md:text-lg text-base"
+                    >
+                      <p class="">Agriculture</p>
+                      <p class="">Natural way of agriculture</p>
+                    </span>
+                    <a
+                      href=""
+                      class="px-6 py-2 bg-secondary hover:bg-accent-primary transition-all ease-in-out duration-300 font-medium rounded-lg text-center"
+                      >See more</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide p-0.5">
+                <div
+                  class="card relative text-white rounded-lg bg-white overflow-hidden group w-full h-fit flex items-center flex-col justify-center gap-4"
+                >
+                  <img
+                    src="./public/assets/image 18.png"
+                    class="group-hover:scale-125 transition-all ease-in-out duration-500"
+                    alt=""
+                  />
+
+                  <div
+                    class="body w-full opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-500 gap-6 p-6 bg-black/40 h-full flex flex-col absolute font-normal text-justify md:text-base text-sm z-20 line-clamp-4"
+                  >
+                    <span
+                      class="wrap mt-auto font-semibold md:text-lg text-base"
+                    >
+                      <p class="">Agriculture</p>
+                      <p class="">Natural way of agriculture</p>
+                    </span>
+                    <a
+                      href=""
+                      class="px-6 py-2 bg-secondary hover:bg-accent-primary transition-all ease-in-out duration-300 font-medium rounded-lg text-center"
+                      >See more</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pagginatin-wrap !mt-8">
+              <div
+                class="pagination-mod-6 flex items-center w-fit justify-center gap-2"
+              ></div>
+            </div>
+          </div>
+        </div>
         <div
           class="company-part lg:text-5xl md:text-3xl text-xl font-medium flex flex-col lg:space-y-24 md:space-y-14 space-y-8 text-secondary"
         >
@@ -914,46 +1070,113 @@
     <!-- Vidio -->
     <section
       id="mod-3"
-      class="flex flex-col relative items-center justify-center overflow-hidden md:py-36 py-14 bg-cover bg-center bg-no-repeat"
-      style="
-        background: linear-gradient(
-            90deg,
-            #64903a -0.7%,
-            #263c28 -0.69%,
-            rgba(0, 0, 0, 0) 100%,
-            rgba(38, 60, 40, 0.22) 100%
-          ),
-          linear-gradient(
-            0deg,
-            rgba(0, 0, 0, 0.15) 0%,
-            rgba(0, 0, 0, 0.15) 100%
-          ),
-          url(./public/assets/image.png) lightgray 50% / cover no-repeat;
-      "
+      class="flex flex-col relative items-center justify-center overflow-hidden md:py-36 py-14 bg-accent-primary"
     >
+      <!-- Overlay Gradient -->
       <div
-        class="container font-semibold flex md:flex-row md:gap-0 gap-6 flex-col justify-center items-center w-full md:justify-between"
+        class="absolute inset-0 bg-gradient-to-r from-[#e92028]/[64%] to-[#e92028]/[16%] pointer-events-none"
+      ></div>
+
+      <div
+        class="container font-semibold flex md:flex-row md:gap-0 gap-6 flex-col justify-center items-center w-full md:justify-between relative z-10"
       >
         <p
-          class="text-white md:w-[50%] lg:text-5xl md:text-2xl text-base md:text-start text-center font-semibold leading-normal"
+          class="text-white md:w-[50%] lg:text-5xl md:text-2xl text-xl md:text-start text-center font-semibold leading-normal"
         >
-          <span class="text-secondary">Agriculture.</span> Driving Progress
-          Toward a Greener and Healthier Future
+          We are Leader in Agriculture Market
         </p>
-        <div class="play-button md:w-[50%] md:place-items-end">
-          <div
-            class="lg:w-24 md:w-18 md:h-18 w-12 lg:h-24 h-12 rounded-full flex items-center justify-center outline-1 outline-white"
-          >
-            <div
-              class="lg:w-12 w-6 md:w-9 md:h-9 lg:h-12 h-6 bg-white rounded-full flex items-center justify-center"
-            >
-              <img src="./public/assets/playbtn.svg" class="w-full" alt="" />
-            </div>
-          </div>
-        </div>
+        <a
+          href=""
+          class="play-button text-white md:text-xl text-base font-semibold rounded-lg uppercase py-4 px-8 w-fit md:self-end bg-danger inline-flex items-center"
+        >
+          discover more
+        </a>
       </div>
+
+      <!-- Background Image -->
+      <img
+        src="./public/assets/style-1.png"
+        class="w-full h-full absolute inset-0 opacity-40 object-cover"
+        alt=""
+      />
     </section>
   </body>
+  <footer class="bg-white text-secondary">
+    <div
+      class="container flex flex-col lg:grid md:gap-24 lg:py-20 gap-12 py-10 grid-cols-12"
+    >
+      <!-- About Section -->
+      <div class="col-span-6 flex flex-col gap-6">
+        <h2 class="font-semibold md:text-2xl text-xl">About us</h2>
+        <p class="font-light md:text-lg text-base">
+          Lorem ipsum dolor sit amet, adipiscing elit. In hac habitasse platea
+          dictumst. Duis porta, quam ut finibus ultrices.
+        </p>
+        <hr class="border-secondary" />
+        <div class="flex gap-6">
+          <img
+            src="./public/assets/Leaf.png"
+            class="w-8"
+            alt="Social icon"
+            loading="lazy"
+          />
+          <img
+            src="./public/assets/Leaf.png"
+            class="w-8"
+            alt="Social icon"
+            loading="lazy"
+          />
+          <img
+            src="./public/assets/Leaf.png"
+            class="w-8"
+            alt="Social icon"
+            loading="lazy"
+          />
+          <img
+            src="./public/assets/Leaf.png"
+            class="w-8"
+            alt="Social icon"
+            loading="lazy"
+          />
+        </div>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav class="col-span-6 md:col-span-3 flex flex-col gap-6">
+        <h2 class="font-semibold md:text-2xl text-xl">Useful Links</h2>
+        <div class="flex flex-col gap-4 text-base font-light">
+          <a href="#projects">New Projects</a>
+          <a href="#services">Our Services</a>
+          <a href="#about">About Us</a>
+          <a href="#contact">Contact us</a>
+        </div>
+      </nav>
+
+      <!-- Newsletter Section -->
+      <div class="col-span-6 md:col-span-3 flex flex-col gap-6">
+        <h2 class="font-semibold md:text-2xl text-xl">Newsletter</h2>
+        <p class="font-light md:text-lg text-base">
+          Subscribe to our weekly Newsletter and receive updates via email.
+        </p>
+        <form class="w-full max-w-xs">
+          <div class="flex gap-2">
+            <input
+              type="email"
+              placeholder="Enter your email here..."
+              class="flex-1 py-4 px-6 rounded-full bg-accent-primary text-white placeholder:text-white focus:outline-none"
+              required
+            />
+            <button
+              type="submit"
+              class="px-6 py-4 rounded-full bg-secondary text-sm text-white uppercase font-medium hover:bg-secondary-dark transition-colors"
+            >
+              Send
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./public/js/swiper.js"></script>
   <script>

@@ -259,6 +259,77 @@ const mod5Swiper = new Swiper(".mod-5-swiper", {
   // noSwipingClass: "swiper-slide",
 });
 
+const mod6Swiper = new Swiper(".mod-6-swiper", {
+  // Infinite loop configuration
+  loop:true,
+  slidesPerView: 1,
+  spaceBetween: 30,
+
+  // Autoplay configuration
+  // autoplay: {
+  //   delay: 1, // Minimal delay for continuous movement
+  //   disableOnInteraction: false,
+  //   pauseOnMouseEnter: true,
+  //   waitForTransition: false, // Don't wait for transition to complete
+  // },
+
+  // Speed configuration for smooth continuous movement
+  speed: 600, // Match this with CSS transition duration
+  // followFinger: false,
+  // allowTouchMove: false,
+
+  // // Core configuration
+  // autoHeight: true,
+  resistanceRatio: 0,
+  updateOnWindowResize: true,
+  observer: true,
+  observeParents: true,
+
+  // Responsive breakpoints
+  breakpoints: {
+    360: {
+      // Mobile-first
+      slidesPerView: 1.2,
+      spaceBetween: 8,
+      centeredSlides: true,
+    },
+    768: {
+      // Tablet
+      slidesPerView: 1.5,
+      spaceBetween: 14,
+      centeredSlides: true,
+    },
+    1024: {
+      // Desktop
+      slidesPerView: 1.5,
+      spaceBetween: 24,
+      centeredSlides: false,
+    },
+    1280: {
+      // Large desktop
+      slidesPerView: 4,
+      spaceBetween: 8,
+      // slidesPerGroup: 2,
+    },
+  },
+
+  // Pagination improvements
+  pagination: {
+    el: ".pagination-mod-6",
+    clickable: true,
+    // bulletClass: "swiper-pagination-bullet bg-white/40 mx-1.5 !w-2.5 !h-2.5",
+    // bulletActiveClass: "!bg-white !w-6 scale-100",
+  },
+
+  // Transition effects
+  effect: "slide",
+  grabCursor: true,
+
+  // Disable manual control features
+  // noSwiping: true,
+  // noSwipingClass: "swiper-slide",
+});
+
 // Force continuous autoplay reset
 // mod5Swiper.on("slideChange", function () {
 //   if (!this.autoplay.running) {
