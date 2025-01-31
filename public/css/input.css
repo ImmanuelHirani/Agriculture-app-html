@@ -13,6 +13,7 @@
 
   /* Fonts */
   --font-livvic: "Livvic", sans-serif;
+  --font-jhonstown: "Johnstown";
   /* Fonts end */
 }
 
@@ -118,14 +119,16 @@
 }
 
 /* @font-face {
-  font-family: "Livvic";
-  font-style: normal;
-  font-weight: 100;
-  font-display: swap;
-  src: url("/fonts/livic/Livvic-Thin.ttf") format("truetype");
-}
+  font-family: "kailsix-regular";
+  src: url("../Font/Kailsix/kailsix-regular.otf") format("opentype");
+} */
 
 @font-face {
+  font-family: "Johnstown";
+  src: url("../fonts/Johnstown/JohnstownDemo.ttf") format("truetype");
+}
+
+/* @font-face {
   font-family: "Livvic";
   font-style: normal;
   font-weight: 200;
@@ -320,3 +323,28 @@
 }
 
 /* Slider End */
+/* Quick Link  */
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-10deg); }
+  50% { transform: rotate(20deg); }
+}
+
+.animate-wiggle {
+  animation: wiggle 2s ease-in-out infinite;
+}
+
+.quick-link {
+  @apply w-16 h-16 flex items-center justify-center;
+  @apply transition-all duration-300 ease-out transform;
+  transform: translateY(20px);
+}
+
+.active .quick-link {
+  transform: translateY(0);
+}
+
+#quickLinks.active {
+  opacity: 1;
+  visibility: visible;
+}
+/* Quick Link end */
