@@ -22,7 +22,7 @@
     <div
       class="bg-white w-fit mx-auto shadow-2xl md:py-5 py-3.5 transition-all ease-in-out duration-300 rounded-lg flex justify-between items-center md:px-8 px-4"
     >
-      <div class="flex items-center space-x-3 md:w-[17%] w-[45%]">
+      <div class="flex items-center space-x-3 lg:w-[17%] md:w-[25%] w-[45%]">
         <img
           src="./public/assets/Logo.png"
           alt="Logo"
@@ -574,9 +574,8 @@
     </section>
     <!-- High Quality Intro -->
     <section class="bg-accent-secondary relative text-white overflow-hidden">
-      <div class="md:grid grid-cols-12 flex flex-col items-stretch md:gap-4">
-        <!-- Image Container -->
-        <div class="lg:col-span-5 col-span-12 h-full min-h-[400px] md:min-h-0">
+      <div class="md:grid grid-cols-12 flex flex-col md:gap-4 items-center">
+        <div class="lg:col-span-5 col-span-12 h-full">
           <img
             src="./public/assets/close-up-box-with-vegetables-hands-mature-man 1.png"
             alt="Farmer holding fresh vegetables"
@@ -584,82 +583,58 @@
             loading="lazy"
           />
         </div>
-
-        <!-- Content Section -->
         <div
-          class="lg:col-span-7 col-span-12 lg:p-24 p-12 p-6 flex flex-col gap-8"
+          class="lg:col-span-7 col-span-12 md:p-24 px-4 py-6 flex flex-col gap-8"
         >
-          <header class="space-y-2 md:space-y-3">
-            <p class="text-base md:text-xl font-light tracking-wide">
-              MODERN AGRICULTURE
-            </p>
-            <h2
-              class="text-xl md:text-4xl font-bold leading-snug md:leading-normal"
-            >
+          <div class="wrap flex flex-col md:gap-3">
+            <p class="md:text-xl text-base font-light">MODERN AGRICULTURE</p>
+            <p class="font-bold md:text-4xl text-xl md:leading-normal">
               Providing High Quality Products
-            </h2>
-          </header>
-
-          <!-- Feature Cards -->
-          <div class="space-y-6">
-            <article class="flex gap-4 md:gap-6 items-start">
-              <div
-                class="bg-white p-3 rounded-full min-w-[3rem] md:min-w-[4rem] flex-shrink-0"
-              >
-                <img
-                  src="./public/assets/test-1.svg"
-                  alt="Growth chart icon"
-                  class="w-6 h-6 md:w-8 md:h-8"
-                />
-              </div>
-              <div class="space-y-1 md:space-y-2">
-                <h3 class="text-base md:text-lg font-semibold">
-                  Our Agriculture Growth
-                </h3>
-                <p class="text-sm md:text-base font-light text-balance">
-                  Lorem ipsum dolor sit amet consectetur. Cursus purus at tempus
-                  arcu. Metus elit auctor
-                </p>
-              </div>
-            </article>
-
-            <hr class="border-white/20" />
-
-            <article class="flex gap-4 md:gap-6 items-start">
-              <div
-                class="bg-white p-3 rounded-full min-w-[3rem] md:min-w-[4rem] flex-shrink-0"
-              >
-                <img
-                  src="./public/assets/test-1.svg"
-                  alt="Quality icon"
-                  class="w-6 h-6 md:w-8 md:h-8"
-                />
-              </div>
-              <div class="space-y-1 md:space-y-2">
-                <h3 class="text-base md:text-lg font-semibold">
-                  Our Agriculture Growth
-                </h3>
-                <p class="text-sm md:text-base font-light text-balance">
-                  Lorem ipsum dolor sit amet consectetur. Cursus purus at tempus
-                  arcu. Metus elit auctor
-                </p>
-              </div>
-            </article>
+            </p>
+          </div>
+          <div class="card flex items-center gap-8">
+            <div
+              class="wrap rounded-full bg-white md:w-[4rem] w-[20%] flex items-center justify-center p-3.5 overflow-hidden"
+            >
+              <img src="./public/assets/test-1.svg" class="w-full" alt="" />
+            </div>
+            <div class="text md:w-auto w-[80%] space-y-2">
+              <p class="font-semibold md:text-lg text-base">
+                Our Agriculture Growth
+              </p>
+              <p class="font-light text-justify md:text-base text-sm">
+                Lorem ipsum dolor sit amet consectetur. Cursus purus at tempus
+                arcu. Metus elit auctor
+              </p>
+            </div>
+          </div>
+          <hr class="outline-1 opacity-20" />
+          <div class="card flex items-center gap-8">
+            <div
+              class="wrap rounded-full bg-white md:w-[4rem] w-[20%] flex items-center justify-center p-3.5 overflow-hidden"
+            >
+              <img src="./public/assets/test-1.svg" class="w-full" alt="" />
+            </div>
+            <div class="text md:w-auto w-[80%] space-y-2">
+              <p class="font-semibold md:text-lg text-base">
+                Our Agriculture Growth
+              </p>
+              <p class="font-light text-justify md:text-base text-sm">
+                Lorem ipsum dolor sit amet consectetur. Cursus purus at tempus
+                arcu. Metus elit auctor
+              </p>
+            </div>
           </div>
         </div>
-
-        <!-- Decorative Elements -->
-        <img
-          src="./public/assets/style.png"
-          alt=""
-          role="presentation"
-          class="absolute bottom-0 right-0 w-[40%] opacity-30 pointer-events-none"
-        />
-        <div
-          aria-hidden="true"
-          class="hidden md:block w-40 h-40 rounded-bl-4xl bg-white/50 absolute top-0 right-0"
-        ></div>
       </div>
+      <img
+        src="./public/assets/style.png"
+        class="absolute bottom-0 right-0 w-[40%] opacity-30"
+        alt=""
+      />
+      <div
+        class="overlay-q1 md:visible invisible w-[10rem] h-[10rem] rounded-bl-4xl bg-white/50 absolute top-0 right-0"
+      ></div>
     </section>
     <!-- pilosopi / project / counting-->
     <section
@@ -1081,7 +1056,7 @@
         class="container font-semibold flex md:flex-row md:gap-0 gap-6 flex-col justify-center items-center w-full md:justify-between relative z-10"
       >
         <p
-          class="text-white md:w-[50%] lg:text-5xl md:text-2xl text-xl md:text-start text-center font-semibold leading-normal"
+          class="text-white md:w-[50%] lg:text-5xl text-2xl md:text-start text-center font-semibold leading-normal"
         >
           We are Leader in Agriculture Market
         </p>
