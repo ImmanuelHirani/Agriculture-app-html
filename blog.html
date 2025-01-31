@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./public/css/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- Navbar -->
+  <nav
+    class="z-50 text-base font-semibold fixed container w-full md:top-8 top-4 starting:h-auto h-fit mx-auto right-1/2 translate-x-1/2"
+  >
+    <div
+      class="bg-white w-fit mx-auto shadow-md md:py-5 py-3.5 transition-all ease-in-out duration-300 rounded-lg flex justify-between items-center md:px-8 px-4"
+    >
+      <div class="flex items-center space-x-3 lg:w-[17%] md:w-[25%] w-[45%]">
+        <img
+          src="./public/assets/Logo.png"
+          alt="Logo"
+          class="w-full object-contain"
+        />
+      </div>
+      <!-- Desktop Navigation -->
+      <div
+        class="hidden uppercase lg:flex mx-auto gap-14 items-center justify-center w-fit"
+      >
+        <a
+          href="index.html"
+          class="text-accent-primary hover:text-secondary transition-colors"
+          >Home</a
+        >
+        <a
+          href="#"
+          class="text-accent-primary hover:text-secondary transition-colors"
+          >About Us</a
+        >
+
+        <!-- Desktop Dropdown -->
+        <div class="relative group">
+          <button
+            class="flex items-center gap-3 cursor-pointer text-accent-primary uppercase hover:text-secondary transition-colors"
+          >
+            Product
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="w-5 h-5 ml-1 transition-transform group-hover:rotate-180"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </button>
+          <div
+            class="absolute left-0 mt-[45%] w-max rounded-lg px-2 py-2 flex flex-col gap-4 shadow-lg bg-white opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300"
+          >
+            <a
+              href="#"
+              class="block px-6 py-2 hover:bg-secondary rounded-lg hover:text-white transition-colors"
+              >Product 1</a
+            >
+            <a
+              href="#"
+              class="block px-6 py-2 hover:bg-secondary rounded-lg hover:text-white transition-colors"
+              >Product 2</a
+            >
+          </div>
+        </div>
+
+        <a
+          href="blog.html"
+          class="text-accent-primary hover:text-secondary transition-colors"
+          >Blog</a
+        >
+        <a
+          href="contact.html"
+          class="text-accent-primary hover:text-secondary transition-colors"
+          >Contact Us</a
+        >
+      </div>
+
+      <!-- Language & Mobile Menu Button -->
+      <div class="wrap flex items-center gap-3">
+        <button
+          class="bg-secondary uppercase text-white py-3 px-4 w-fit lg:block hidden rounded-full"
+        >
+          <span class="flex items-center gap-2">
+            <img
+              src="./public/assets/world.svg"
+              alt="Language"
+              class="w-[40%]"
+            />
+            <p>en</p>
+          </span>
+        </button>
+
+        <button
+          class="bg-secondary text-white py-1.5 px-3 w-fit lg:hidden rounded-full"
+        >
+          <div class="flex items-center justify-center gap-2">
+            <img
+              src="./public/assets/world.svg"
+              alt="Language"
+              class="w-[35%]"
+            />
+            <p class="text-lg">en</p>
+          </div>
+        </button>
+        <button
+          onclick="toggleMobileMenu()"
+          class="lg:hidden text-gray-700 focus:outline-none"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            class="w-8 h-8"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div
+      id="mobile-menu"
+      class="lg:hidden bg-white overflow-hidden mt-1.5 px-3 rounded-lg transition-all duration-300 ease-in-out max-h-0"
+    >
+      <a
+        href="#"
+        class="block px-4 py-2 text-gray-700 hover:bg-secondary rounded-lg hover:text-white"
+        >Home</a
+      >
+      <a
+        href="#"
+        class="block px-4 py-2 text-gray-700 hover:bg-secondary rounded-lg hover:text-white"
+        >About Us</a
+      >
+      <!-- Mobile Dropdown -->
+      <div class="relative">
+        <button
+          onclick="toggleMobileDropdown()"
+          class="w-full flex items-center gap-3 text-left px-4 py-2 text-gray-700 hover:bg-secondary rounded-lg hover:text-white"
+        >
+          Product
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            class="w-4 h-4 ml-1"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </button>
+        <div
+          id="mobile-dropdown"
+          class="overflow-hidden transition-all ease-in-out duration-300 max-h-0"
+        >
+          <div class="rounded-lg py-2 px-4">
+            <a
+              href="#"
+              class="block px-4 py-2 text-gray-700 hover:bg-secondary rounded-lg hover:text-white"
+              >Product 1</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-gray-700 hover:bg-secondary rounded-lg hover:text-white"
+              >Product 2</a
+            >
+          </div>
+        </div>
+      </div>
+      <a
+        href="#"
+        class="block px-4 py-2 text-gray-700 hover:bg-secondary rounded-lg hover:text-white"
+        >Blog</a
+      >
+      <a
+        href="#"
+        class="block px-4 py-2 text-gray-700 hover:bg-secondary rounded-lg hover:text-white"
+        >Contact Us</a
+      >
+    </div>
+  </nav>
+  <body class="relative">
+    <!-- High Quality Intro -->
+    <!-- Hero section -->
+    <section
+      id=" mod-1"
+      class="h-lvh relative !mt-0 overflow-hidden flex items-center justify-center"
+    >
+      <div
+        class="parallax-bg relative after:absolute after:w-full after:h-full after:bg-black after:opacity-70"
+        style="background-image: url('./public/assets/image.png')"
+        data-swiper-parallax="-23%"
+      ></div>
+      <p class="text-7xl text-white z-50 relative font-semibold uppercase">
+        Our blog
+      </p>
+    </section>
+    <section class="md:py-24 py-12 accent-accent-primary">
+      <div class="container flex">
+        <div class="swiper mod-7-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide p-1">
+              <div class="card flex flex-col gap-6 text-accent-primary">
+                <div
+                  class="header p-1 h-[20rem] outline-1 outline-secondary rounded-lg"
+                >
+                  <img
+                    src="./public/assets/image 11.png"
+                    class="rounded-lg h-full w-full object-cover"
+                    alt=""
+                  />
+                </div>
+                <div class="body flex justify-between">
+                  <div class="wrap flex flex-col gap-1">
+                    <p class="text-xl">Monday, January 22, 2024</p>
+                    <p class="font-semibold text-3xl">Best Quality Only</p>
+                  </div>
+                  <a
+                    href="#"
+                    class="inline-flex items-center justify-center border-2 border-accent-primary rounded-full p-4 transition-colors hover:bg-accent-primary group"
+                    aria-label="Next page"
+                  >
+                    <div class="w-fit p-1 rounded-full bg-accent-primary">
+                      <img
+                        src="./public/assets/right-arrow.svg"
+                        alt="Right arrow"
+                        class="w-6 h-6 text-white group-hover:text-accent-primary"
+                        aria-hidden="true"
+                        role="presentation"
+                      />
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide p-1">
+              <div class="card flex flex-col gap-6 text-accent-primary">
+                <div
+                  class="header p-1 h-[20rem] outline-1 outline-secondary rounded-lg"
+                >
+                  <img
+                    src="./public/assets/image 11.png"
+                    class="rounded-lg h-full w-full object-cover"
+                    alt=""
+                  />
+                </div>
+                <div class="body flex justify-between">
+                  <div class="wrap flex flex-col gap-1">
+                    <p class="text-xl">Monday, January 22, 2024</p>
+                    <p class="font-semibold text-3xl">Best Quality Only</p>
+                  </div>
+                  <a
+                    href="#"
+                    class="inline-flex items-center justify-center border-2 border-accent-primary rounded-full p-4 transition-colors hover:bg-accent-primary group"
+                    aria-label="Next page"
+                  >
+                    <div class="w-fit p-1 rounded-full bg-accent-primary">
+                      <img
+                        src="./public/assets/right-arrow.svg"
+                        alt="Right arrow"
+                        class="w-6 h-6 text-white group-hover:text-accent-primary"
+                        aria-hidden="true"
+                        role="presentation"
+                      />
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide p-1">
+              <div class="card flex flex-col gap-6 text-accent-primary">
+                <div
+                  class="header p-1 h-[20rem] outline-1 outline-secondary rounded-lg"
+                >
+                  <img
+                    src="./public/assets/image 11.png"
+                    class="rounded-lg h-full w-full object-cover"
+                    alt=""
+                  />
+                </div>
+                <div class="body flex justify-between">
+                  <div class="wrap flex flex-col gap-1">
+                    <p class="text-xl">Monday, January 22, 2024</p>
+                    <p class="font-semibold text-3xl">Best Quality Only</p>
+                  </div>
+                  <a
+                    href="#"
+                    class="inline-flex items-center justify-center border-2 border-accent-primary rounded-full p-4 transition-colors hover:bg-accent-primary group"
+                    aria-label="Next page"
+                  >
+                    <div class="w-fit p-1 rounded-full bg-accent-primary">
+                      <img
+                        src="./public/assets/right-arrow.svg"
+                        alt="Right arrow"
+                        class="w-6 h-6 text-white group-hover:text-accent-primary"
+                        aria-hidden="true"
+                        role="presentation"
+                      />
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide p-1">
+              <div class="card flex flex-col gap-6 text-accent-primary">
+                <div
+                  class="header p-1 h-[20rem] outline-1 outline-secondary rounded-lg"
+                >
+                  <img
+                    src="./public/assets/image 11.png"
+                    class="rounded-lg h-full w-full object-cover"
+                    alt=""
+                  />
+                </div>
+                <div class="body flex justify-between">
+                  <div class="wrap flex flex-col gap-1">
+                    <p class="text-xl">Monday, January 22, 2024</p>
+                    <p class="font-semibold text-3xl">Best Quality Only</p>
+                  </div>
+                  <a
+                    href="#"
+                    class="inline-flex items-center justify-center border-2 border-accent-primary rounded-full p-4 transition-colors hover:bg-accent-primary group"
+                    aria-label="Next page"
+                  >
+                    <div class="w-fit p-1 rounded-full bg-accent-primary">
+                      <img
+                        src="./public/assets/right-arrow.svg"
+                        alt="Right arrow"
+                        class="w-6 h-6 text-white group-hover:text-accent-primary"
+                        aria-hidden="true"
+                        role="presentation"
+                      />
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide p-1">
+              <div class="card flex flex-col gap-6 text-accent-primary">
+                <div
+                  class="header p-1 h-[20rem] outline-1 outline-secondary rounded-lg"
+                >
+                  <img
+                    src="./public/assets/image 11.png"
+                    class="rounded-lg h-full w-full object-cover"
+                    alt=""
+                  />
+                </div>
+                <div class="body flex justify-between">
+                  <div class="wrap flex flex-col gap-1">
+                    <p class="text-xl">Monday, January 22, 2024</p>
+                    <p class="font-semibold text-3xl">Best Quality Only</p>
+                  </div>
+                  <a
+                    href="#"
+                    class="inline-flex items-center justify-center border-2 border-accent-primary rounded-full p-4 transition-colors hover:bg-accent-primary group"
+                    aria-label="Next page"
+                  >
+                    <div class="w-fit p-1 rounded-full bg-accent-primary">
+                      <img
+                        src="./public/assets/right-arrow.svg"
+                        alt="Right arrow"
+                        class="w-6 h-6 text-white group-hover:text-accent-primary"
+                        aria-hidden="true"
+                        role="presentation"
+                      />
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide p-1">
+              <div class="card flex flex-col gap-6 text-accent-primary">
+                <div
+                  class="header p-1 h-[20rem] outline-1 outline-secondary rounded-lg"
+                >
+                  <img
+                    src="./public/assets/image 11.png"
+                    class="rounded-lg h-full w-full object-cover"
+                    alt=""
+                  />
+                </div>
+                <div class="body flex justify-between">
+                  <div class="wrap flex flex-col gap-1">
+                    <p class="text-xl">Monday, January 22, 2024</p>
+                    <p class="font-semibold text-3xl">Best Quality Only</p>
+                  </div>
+                  <a
+                    href="#"
+                    class="inline-flex items-center justify-center border-2 border-accent-primary rounded-full p-4 transition-colors hover:bg-accent-primary group"
+                    aria-label="Next page"
+                  >
+                    <div class="w-fit p-1 rounded-full bg-accent-primary">
+                      <img
+                        src="./public/assets/right-arrow.svg"
+                        alt="Right arrow"
+                        class="w-6 h-6 text-white group-hover:text-accent-primary"
+                        aria-hidden="true"
+                        role="presentation"
+                      />
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Add custom pagination container -->
+          <div class="custom-pagination !mt-12 flex justify-center gap-2"></div>
+        </div>
+      </div>
+    </section>
+    <section
+      id="mod-3"
+      class="flex flex-col relative items-center justify-center overflow-hidden md:py-36 py-14 bg-accent-primary"
+    >
+      <!-- Overlay Gradient -->
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-[#e92028]/[64%] to-[#e92028]/[16%] pointer-events-none"
+      ></div>
+
+      <div
+        class="container font-semibold flex lg:flex-row lg:gap-0 gap-6 flex-col justify-center items-center w-full lg:justify-between relative z-10"
+      >
+        <div class="wrap flex items-center gap-20 md:w-[80%]">
+          <div
+            class="wrap rounded-full bg-white md:w-[4rem] w-[20%] lg:flex hidden items-center justify-center p-3.5 overflow-hidden"
+          >
+            <img src="./public/assets/growth 1.svg" class="w-full" alt="" />
+          </div>
+          <p
+            class="text-white font-jhonstown md:text-4xl text-2xl md:text-start text-center font-normal leading-normal"
+          >
+            We are Leader in Agriculture Market
+          </p>
+        </div>
+        <a
+          href=""
+          class="play-button text-white text-sm font-semibold rounded-lg uppercase md:py-5 py-3 px-6 md:px-12 w-fit lg:self-end bg-danger inline-flex items-center"
+        >
+          discover more
+        </a>
+      </div>
+
+      <!-- Background Image -->
+      <img
+        src="./public/assets/style-1.png"
+        class="w-full h-full absolute inset-0 opacity-20 object-cover"
+        alt=""
+      />
+    </section>
+    <div class="fixed bottom-4 right-4 z-50" id="quickLinksContainer">
+      <!-- Hidden links container -->
+      <div
+        class="flex flex-col gap-2 mb-2 transition-all duration-300 ease-out opacity-0 invisible"
+        id="quickLinks"
+      >
+        <div
+          class="quick-link bg-accent-primary md:p-4 p-1 rounded-full cursor-pointer"
+        >
+          <img
+            src="./public/assets/phone.svg"
+            class="quick-icon md:w-[3rem] w-[2rem]"
+            alt="Call us"
+          />
+        </div>
+        <div
+          class="quick-link bg-accent-primary md:p-4 p-1 rounded-full cursor-pointer"
+        >
+          <img
+            src="./public/assets/we-chat.svg"
+            class="quick-icon md:w-[3rem] w-[2rem]"
+            alt="Chat via WeChat"
+          />
+        </div>
+        <div
+          class="quick-link bg-accent-primary md:p-4 p-1 rounded-full cursor-pointer"
+        >
+          <img
+            src="./public/assets/wa.svg"
+            class="quick-icon md:w-[3rem] w-[2rem]"
+            alt="Message on WhatsApp"
+          />
+        </div>
+        <div
+          class="quick-link bg-accent-primary md:p-4 p-1 rounded-full cursor-pointer"
+        >
+          <img
+            src="./public/assets/email.svg"
+            class="quick-icon md:w-[3rem] w-[2rem]"
+            alt="Message on WhatsApp"
+          />
+        </div>
+      </div>
+
+      <!-- Trigger button -->
+      <div
+        class="quick-link bg-accent-primary md:p-4 p-1 rounded-full cursor-pointer animate-wiggle"
+        id="triggerButton"
+      >
+        <img
+          src="./public/assets/hand.svg"
+          class="md:w-[3rem] w-[2rem]"
+          alt="Quick contacts"
+        />
+      </div>
+    </div>
+  </body>
+  <footer class="bg-white text-secondary">
+    <div
+      class="container flex flex-col lg:grid md:gap-24 lg:py-20 gap-12 py-10 grid-cols-12"
+    >
+      <!-- About Section -->
+      <div class="col-span-6 flex flex-col gap-6">
+        <h2 class="font-semibold md:text-2xl text-xl">About us</h2>
+        <p class="font-light md:text-lg text-base">
+          Lorem ipsum dolor sit amet, adipiscing elit. In hac habitasse platea
+          dictumst. Duis porta, quam ut finibus ultrices.
+        </p>
+        <hr class="border-secondary" />
+        <div class="flex gap-6">
+          <img
+            src="./public/assets/Leaf.png"
+            class="w-8"
+            alt="Social icon"
+            loading="lazy"
+          />
+          <img
+            src="./public/assets/Leaf.png"
+            class="w-8"
+            alt="Social icon"
+            loading="lazy"
+          />
+          <img
+            src="./public/assets/Leaf.png"
+            class="w-8"
+            alt="Social icon"
+            loading="lazy"
+          />
+          <img
+            src="./public/assets/Leaf.png"
+            class="w-8"
+            alt="Social icon"
+            loading="lazy"
+          />
+        </div>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav class="col-span-6 md:col-span-3 flex flex-col gap-6">
+        <h2 class="font-semibold md:text-2xl text-xl">Useful Links</h2>
+        <div class="flex flex-col gap-4 text-base font-light">
+          <a href="#projects">New Projects</a>
+          <a href="#services">Our Services</a>
+          <a href="#about">About Us</a>
+          <a href="#contact">Contact us</a>
+        </div>
+      </nav>
+
+      <!-- Newsletter Section -->
+      <div class="col-span-6 md:col-span-3 flex flex-col gap-6">
+        <h2 class="font-semibold md:text-2xl text-xl">Newsletter</h2>
+        <p class="font-light md:text-lg text-base">
+          Subscribe to our weekly Newsletter and receive updates via email.
+        </p>
+        <form class="w-full max-w-xs">
+          <div class="flex gap-2">
+            <input
+              type="email"
+              placeholder="Enter your email here..."
+              class="flex-1 py-4 px-6 rounded-full bg-accent-primary text-white placeholder:text-white focus:outline-none"
+              required
+            />
+            <button
+              type="submit"
+              class="px-6 py-4 rounded-full bg-secondary text-sm text-white uppercase font-medium hover:bg-secondary-dark transition-colors"
+            >
+              Send
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <hr />
+    <p class="mx-auto text-center py-12 px-4 text-accent-primary font-semibold">
+      Copyright ©(Company Name). All Right Reserved.
+    </p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./public/js/swiper.js"></script>
+  <script>
+    function toggleMobileMenu() {
+      const mobileMenu = document.getElementById("mobile-menu");
+      mobileMenu.classList.toggle("max-h-0");
+      mobileMenu.classList.toggle("max-h-screen");
+      mobileMenu.classList.toggle("py-2");
+      mobileMenu.classList.toggle("shadow-2xl");
+      mobileMenu.classList.toggle("rounded-b-lg");
+    }
+
+    function toggleMobileDropdown() {
+      const dropdown = document.getElementById("mobile-dropdown");
+      dropdown.classList.toggle("max-h-0");
+      dropdown.classList.toggle("max-h-40");
+      dropdown.classList.toggle("opacity-100");
+    }
+  </script>
+  <script src="./public/js/counter.js"></script>
+  <script src="./public/js/quick-link.js"></script>
+</html>

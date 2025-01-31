@@ -261,7 +261,7 @@ const mod5Swiper = new Swiper(".mod-5-swiper", {
 
 const mod6Swiper = new Swiper(".mod-6-swiper", {
   // Infinite loop configuration
-  loop:true,
+  loop: true,
   slidesPerView: 1,
   spaceBetween: 30,
 
@@ -328,6 +328,55 @@ const mod6Swiper = new Swiper(".mod-6-swiper", {
   // Disable manual control features
   // noSwiping: true,
   // noSwipingClass: "swiper-slide",
+});
+
+const mod7Swiper = new Swiper(".mod-7-swiper", {
+  loop: false,
+  slidesPerView: 1,
+
+  speed: 600,
+  resistanceRatio: 0,
+  updateOnWindowResize: true,
+  observer: true,
+  observeParents: true,
+  allowTouchMove: false, // Disable dragging
+  pagination: {
+    el: ".custom-pagination",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
+    },
+  },
+
+  breakpoints: {
+    640: {
+      spaceBetween: 20, // Adjust as needed
+      slidesPerView: 2,
+      grid: {
+        rows: 2,
+        fill: "row",
+      },
+      slidesPerGroup: 4,
+    },
+    1024: {
+      spaceBetween: 20, // Adjust as needed
+      slidesPerView: 2,
+      grid: {
+        rows: 2,
+        fill: "row",
+      },
+      slidesPerGroup: 4,
+    },
+    1280: {
+      spaceBetween: 20, // Adjust as needed
+      slidesPerView: 3,
+      grid: {
+        rows: 2,
+        fill: "row",
+      },
+      slidesPerGroup: 6,
+    },
+  },
 });
 
 // Force continuous autoplay reset

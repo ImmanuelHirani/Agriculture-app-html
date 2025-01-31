@@ -27,5 +27,5 @@ document.addEventListener("keydown", function (e) {
 
 // Add staggered animation delay
 document.querySelectorAll("#quickLinks .quick-link").forEach((link, index) => {
-  link.style.transitionDelay = `${index * 150}ms`;
+  link.style.transitionDelay = `${index * 50}ms`;
 });
