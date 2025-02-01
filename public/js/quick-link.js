@@ -6,14 +6,12 @@ const container = document.getElementById("quickLinksContainer");
 triggerButton.addEventListener("click", function (e) {
   e.stopPropagation();
   quickLinks.classList.toggle("active");
-  container.classList.toggle("active");
 });
 
 // Close menu when clicking outside
 document.addEventListener("click", function (e) {
   if (!container.contains(e.target)) {
     quickLinks.classList.remove("active");
-    container.classList.remove("active");
   }
 });
 
@@ -21,11 +19,10 @@ document.addEventListener("click", function (e) {
 document.addEventListener("keydown", function (e) {
   if (e.key === "Escape") {
     quickLinks.classList.remove("active");
-    container.classList.remove("active");
   }
 });
 
 // Add staggered animation delay
 document.querySelectorAll("#quickLinks .quick-link").forEach((link, index) => {
-  link.style.transitionDelay = `${index * 50}ms`;
+  link.style.transitionDelay = `${index * 500}ms`;
 });

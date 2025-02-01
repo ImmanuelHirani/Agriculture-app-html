@@ -342,20 +342,25 @@
 .quick-link {
   @apply w-16 h-16 flex items-center justify-center;
   @apply transition-all duration-300 ease-out transform;
-  transform: translateY(20px);
 }
 
-.active .quick-link {
-  transform: translateY(0);
+#quickLinks {
+  @apply transition-all ease-in-out duration-500;
 }
 
 #quickLinks.active {
+  max-height: 500px; /* Adjust based on your content height */
   opacity: 1;
-  visibility: visible;
 }
 /* Quick Link end */
 
 /* Custom pagination styling */
+
+.mod-7-swiper .swiper-slide {
+  margin-top: 20px; /* Jarak atas */
+  margin-bottom: 20px; /* Jarak bawah */
+  height: calc(100% - 40px); /* Sesuaikan tinggi untuk kompensasi margin */
+}
 
 .custom-pagination .swiper-pagination-bullet {
   @apply w-8 h-8 flex items-center justify-center rounded-full 

@@ -333,13 +333,11 @@ const mod6Swiper = new Swiper(".mod-6-swiper", {
 const mod7Swiper = new Swiper(".mod-7-swiper", {
   loop: false,
   slidesPerView: 1,
-
   speed: 600,
   resistanceRatio: 0,
   updateOnWindowResize: true,
   observer: true,
   observeParents: true,
-  allowTouchMove: false, // Disable dragging
   pagination: {
     el: ".custom-pagination",
     clickable: true,
@@ -350,34 +348,38 @@ const mod7Swiper = new Swiper(".mod-7-swiper", {
 
   breakpoints: {
     640: {
-      spaceBetween: 20, // Adjust as needed
+      spaceBetween: 20,
       slidesPerView: 2,
       grid: {
         rows: 2,
         fill: "row",
       },
-      slidesPerGroup: 4,
+      slidesPerGroup: 1, // Pastikan hanya berpindah 1 slide
     },
     1024: {
-      spaceBetween: 20, // Adjust as needed
+      allowTouchMove: false, // Disable dragging
+      spaceBetween: 20,
       slidesPerView: 2,
       grid: {
         rows: 2,
         fill: "row",
       },
-      slidesPerGroup: 4,
+      slidesPerGroup: 1, // Pastikan hanya berpindah 1 slide
     },
     1280: {
-      spaceBetween: 20, // Adjust as needed
+      allowTouchMove: false, // Disable dragging
+      spaceBetween: 20,
       slidesPerView: 3,
       grid: {
         rows: 2,
         fill: "row",
       },
-      slidesPerGroup: 6,
+      slidesPerGroup: 4, // Pastikan hanya berpindah 1 slide
     },
   },
 });
+
+// Tambahkan event listener untuk memastikan perpindahan ke item berikutnya
 
 // Force continuous autoplay reset
 // mod5Swiper.on("slideChange", function () {
