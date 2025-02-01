@@ -22,7 +22,7 @@
     <div
       class="bg-white w-fit mx-auto shadow-md md:py-5 py-3.5 transition-all ease-in-out duration-300 rounded-lg flex justify-between items-center md:px-8 px-4"
     >
-      <div class="flex items-center space-x-3 lg:w-[17%] md:w-[25%] w-[45%]">
+      <div class="flex items-center space-x-3 lg:w-[20%] md:w-[25%] w-[55%]">
         <img
           src="./public/assets/Logo.png"
           alt="Logo"
@@ -1082,12 +1082,16 @@
         alt=""
       />
     </section>
-    <div class="fixed bottom-4 right-4 z-50" id="quickLinksContainer">
+    <div
+      class="fixed bottom-4 right-4 z-50 rounded-full"
+      id="quickLinksContainer"
+    >
       <!-- Hidden links container -->
       <div
-        class="flex flex-col gap-2 mb-2 transition-all duration-300 ease-out opacity-0 invisible"
+        class="flex flex-col gap-2 transition-all duration-300 ease-out absolute bottom-full right-0 mb-2 max-h-0 opacity-0 overflow-hidden"
         id="quickLinks"
       >
+        <!-- Your quick link items remain the same -->
         <div
           class="quick-link bg-accent-primary md:p-4 p-1 rounded-full cursor-pointer"
         >
@@ -1101,9 +1105,18 @@
           class="quick-link bg-accent-primary md:p-4 p-1 rounded-full cursor-pointer"
         >
           <img
+            src="./public/assets/email.svg"
+            class="quick-icon md:w-[3rem] w-[2rem]"
+            alt="Call us"
+          />
+        </div>
+        <div
+          class="quick-link bg-accent-primary md:p-4 p-1 rounded-full cursor-pointer"
+        >
+          <img
             src="./public/assets/we-chat.svg"
             class="quick-icon md:w-[3rem] w-[2rem]"
-            alt="Chat via WeChat"
+            alt="Call us"
           />
         </div>
         <div
@@ -1112,21 +1125,13 @@
           <img
             src="./public/assets/wa.svg"
             class="quick-icon md:w-[3rem] w-[2rem]"
-            alt="Message on WhatsApp"
+            alt="Call us"
           />
         </div>
-        <div
-          class="quick-link bg-accent-primary md:p-4 p-1 rounded-full cursor-pointer"
-        >
-          <img
-            src="./public/assets/email.svg"
-            class="quick-icon md:w-[3rem] w-[2rem]"
-            alt="Message on WhatsApp"
-          />
-        </div>
+        <!-- Other link items... -->
       </div>
 
-      <!-- Trigger button -->
+      <!-- Trigger button remains the same -->
       <div
         class="quick-link bg-accent-primary md:p-4 p-1 rounded-full cursor-pointer animate-wiggle"
         id="triggerButton"
