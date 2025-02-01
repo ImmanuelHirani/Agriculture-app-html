@@ -107,19 +107,6 @@
             <p>en</p>
           </span>
         </button>
-
-        <button
-          class="bg-secondary text-white py-1.5 px-3 w-fit lg:hidden rounded-full"
-        >
-          <div class="flex items-center justify-center gap-2">
-            <img
-              src="./public/assets/world.svg"
-              alt="Language"
-              class="w-[35%]"
-            />
-            <p class="text-lg">en</p>
-          </div>
-        </button>
         <button
           onclick="toggleMobileMenu()"
           class="lg:hidden text-gray-700 focus:outline-none"
@@ -206,6 +193,18 @@
         class="block px-4 py-2 text-gray-700 hover:bg-secondary rounded-lg hover:text-white"
         >Contact Us</a
       >
+      <button
+        class="bg-secondary text-white py-1.5 mt-2 px-3 w-full lg:hidden rounded-lg"
+      >
+        <div class="flex items-center justify-center gap-2">
+          <img
+            src="./public/assets/world.svg"
+            alt="Language"
+            class="w-[1.5rem]"
+          />
+          <p class="text-xl">en</p>
+        </div>
+      </button>
     </div>
   </nav>
   <body class="relative">
@@ -323,66 +322,66 @@
       />
     </section>
     <div
-    class="fixed bottom-4 right-4 z-50 rounded-full"
-    id="quickLinksContainer"
-  >
-    <!-- Hidden links container -->
-    <div
-      class="flex flex-col gap-2 transition-all duration-300 ease-out absolute bottom-full right-0 mb-2 max-h-0 opacity-0 overflow-hidden"
-      id="quickLinks"
+      class="fixed bottom-4 right-4 z-50 rounded-full"
+      id="quickLinksContainer"
     >
-      <!-- Your quick link items remain the same -->
+      <!-- Hidden links container -->
       <div
-        class="quick-link bg-accent-primary md:p-4 p-1 rounded-full cursor-pointer"
+        class="flex flex-col gap-2 transition-all duration-300 ease-out absolute bottom-full right-0 mb-2 max-h-0 opacity-0 overflow-hidden"
+        id="quickLinks"
       >
-        <img
-          src="./public/assets/phone.svg"
-          class="quick-icon md:w-[3rem] w-[2rem]"
-          alt="Call us"
-        />
+        <!-- Your quick link items remain the same -->
+        <div
+          class="quick-link bg-accent-primary md:p-4 p-1 rounded-full cursor-pointer"
+        >
+          <img
+            src="./public/assets/phone.svg"
+            class="quick-icon md:w-[3rem] w-[2rem]"
+            alt="Call us"
+          />
+        </div>
+        <div
+          class="quick-link bg-accent-primary md:p-4 p-1 rounded-full cursor-pointer"
+        >
+          <img
+            src="./public/assets/email.svg"
+            class="quick-icon md:w-[3rem] w-[2rem]"
+            alt="Call us"
+          />
+        </div>
+        <div
+          class="quick-link bg-accent-primary md:p-4 p-1 rounded-full cursor-pointer"
+        >
+          <img
+            src="./public/assets/we-chat.svg"
+            class="quick-icon md:w-[3rem] w-[2rem]"
+            alt="Call us"
+          />
+        </div>
+        <div
+          class="quick-link bg-accent-primary md:p-4 p-1 rounded-full cursor-pointer"
+        >
+          <img
+            src="./public/assets/wa.svg"
+            class="quick-icon md:w-[3rem] w-[2rem]"
+            alt="Call us"
+          />
+        </div>
+        <!-- Other link items... -->
       </div>
-      <div
-        class="quick-link bg-accent-primary md:p-4 p-1 rounded-full cursor-pointer"
-      >
-        <img
-          src="./public/assets/email.svg"
-          class="quick-icon md:w-[3rem] w-[2rem]"
-          alt="Call us"
-        />
-      </div>
-      <div
-        class="quick-link bg-accent-primary md:p-4 p-1 rounded-full cursor-pointer"
-      >
-        <img
-          src="./public/assets/we-chat.svg"
-          class="quick-icon md:w-[3rem] w-[2rem]"
-          alt="Call us"
-        />
-      </div>
-      <div
-        class="quick-link bg-accent-primary md:p-4 p-1 rounded-full cursor-pointer"
-      >
-        <img
-          src="./public/assets/wa.svg"
-          class="quick-icon md:w-[3rem] w-[2rem]"
-          alt="Call us"
-        />
-      </div>
-      <!-- Other link items... -->
-    </div>
 
-    <!-- Trigger button remains the same -->
-    <div
-      class="quick-link bg-accent-primary md:p-4 p-1 rounded-full cursor-pointer animate-wiggle"
-      id="triggerButton"
-    >
-      <img
-        src="./public/assets/hand.svg"
-        class="md:w-[3rem] w-[2rem]"
-        alt="Quick contacts"
-      />
+      <!-- Trigger button remains the same -->
+      <div
+        class="quick-link bg-accent-primary md:p-4 p-1 rounded-full cursor-pointer animate-wiggle"
+        id="triggerButton"
+      >
+        <img
+          src="./public/assets/hand.svg"
+          class="md:w-[3rem] w-[2rem]"
+          alt="Quick contacts"
+        />
+      </div>
     </div>
-  </div>
   </body>
   <footer class="bg-white text-secondary">
     <div
