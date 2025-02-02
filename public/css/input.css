@@ -4,7 +4,7 @@
   /* Breakpoint Screen end */
 
   /* Color */
-  --color-primary: #ffffff;
+  --color-primary: #faf7f5;
   --color-accent-input: #f1f1f1;
   --color-secondary: #64903a;
   --color-accent-primary: #334b35;
@@ -179,7 +179,7 @@
   }
 
   body {
-    @apply bg-white m-0 p-0;
+    @apply bg-primary m-0 p-0;
   }
 }
 
