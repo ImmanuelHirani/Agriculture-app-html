@@ -1060,14 +1060,14 @@
   .w-\[2\.5rem\] {
     width: 2.5rem;
   }
+  .w-\[2rem\] {
+    width: 2rem;
+  }
   .w-\[10rem\] {
     width: 10rem;
   }
   .w-\[20\%\] {
     width: 20%;
-  }
-  .w-\[2rem\] {
-    width: 2rem;
   }
   .w-\[30\%\] {
     width: 30%;
@@ -3121,6 +3121,11 @@
       width: calc(var(--spacing) * 8);
     }
   }
+  .md\:w-\[3rem\] {
+    @media (width >= 48rem) {
+      width: 3rem;
+    }
+  }
   .md\:w-\[25\%\] {
     @media (width >= 48rem) {
       width: 25%;
@@ -3129,11 +3134,6 @@
   .md\:w-\[2rem\] {
     @media (width >= 48rem) {
       width: 2rem;
-    }
-  }
-  .md\:w-\[3rem\] {
-    @media (width >= 48rem) {
-      width: 3rem;
     }
   }
   .md\:w-\[4rem\] {
@@ -3499,6 +3499,11 @@
   .lg\:py-24 {
     @media (width >= 64rem) {
       padding-block: calc(var(--spacing) * 24);
+    }
+  }
+  .lg\:pb-24 {
+    @media (width >= 64rem) {
+      padding-bottom: calc(var(--spacing) * 24);
     }
   }
   .lg\:text-left {
