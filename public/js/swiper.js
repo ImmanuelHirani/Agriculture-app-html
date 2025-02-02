@@ -338,7 +338,7 @@ const mod7Swiper = new Swiper(".mod-7-swiper", {
   updateOnWindowResize: true,
   observer: true,
   observeParents: true,
-  
+
   pagination: {
     el: ".custom-pagination",
     clickable: true,
@@ -376,6 +376,50 @@ const mod7Swiper = new Swiper(".mod-7-swiper", {
         fill: "row",
       },
       slidesPerGroup: 4, // Pastikan hanya berpindah 1 slide
+    },
+  },
+});
+
+const mod8Swiper = new Swiper(".mod-8-swiper", {
+  loop: false,
+  slidesPerView: 1.1,
+  spaceBetween: 8,
+  speed: 600,
+  resistanceRatio: 0,
+  updateOnWindowResize: true,
+  observer: true,
+  observeParents: true,
+
+  // Navigation enhancements
+  navigation: {
+    nextEl: ".button-next-product",
+    prevEl: ".button-prev-product",
+    // disabledClass: "swiper-button-disabled opacity-30 cursor-not-allowed",
+  },
+
+  breakpoints: {
+    640: {
+      spaceBetween: 20,
+      slidesPerView: 2,
+      grid: {
+        rows: 2,
+        fill: "row",
+      },
+      slidesPerGroup: 2, // Pastikan hanya berpindah 1 slide
+    },
+    1024: {
+      allowTouchMove: false, // Disable dragging
+      spaceBetween: 20,
+      slidesPerView: 2,
+      grid: {
+        rows: 2,
+        fill: "row",
+      },
+      slidesPerGroup: 1, // Pastikan hanya berpindah 1 slide
+    },
+    1280: {
+      spaceBetween: 8,
+      slidesPerView: 4,
     },
   },
 });
