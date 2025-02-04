@@ -46,7 +46,8 @@
 
         <!-- Desktop Dropdown -->
         <div class="relative group">
-          <button
+          <a
+            href="product.html"
             class="flex items-center gap-3 cursor-pointer text-accent-primary uppercase hover:text-secondary transition-colors"
           >
             Product
@@ -64,19 +65,29 @@
                 d="M19 9l-7 7-7-7"
               />
             </svg>
-          </button>
+          </a>
           <div
-            class="absolute left-0 mt-[45%] w-max rounded-lg px-2 py-2 flex flex-col gap-4 shadow-lg bg-white opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300"
+            class="absolute left-0 mt-[45%] w-max rounded-lg px-2 py-2 flex flex-col shadow-lg bg-white opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300"
           >
             <a
-              href="#"
+              href="product.html#garlic"
               class="block px-6 py-2 hover:bg-secondary rounded-lg hover:text-white transition-colors"
-              >Product 1</a
+              >garlic</a
             >
             <a
-              href="#"
+              href="product.html#onion"
               class="block px-6 py-2 hover:bg-secondary rounded-lg hover:text-white transition-colors"
-              >Product 2</a
+              >onion</a
+            >
+            <a
+              href="product.html#ginger"
+              class="block px-6 py-2 hover:bg-secondary rounded-lg hover:text-white transition-colors"
+              >ginger</a
+            >
+            <a
+              href="product.html#"
+              class="block px-6 py-2 hover:bg-secondary rounded-lg hover:text-white transition-colors"
+              >Other Product</a
             >
           </div>
         </div>
@@ -109,7 +120,7 @@
         </button>
         <button
           onclick="toggleMobileMenu()"
-          class="lg:hidden text-gray-700 focus:outline-none"
+          class="lg:hidden text-secondary focus:outline-none"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -131,23 +142,23 @@
     <!-- Mobile Menu -->
     <div
       id="mobile-menu"
-      class="lg:hidden bg-white overflow-hidden mt-1.5 px-3 rounded-lg transition-all duration-300 ease-in-out max-h-0"
+      class="lg:hidden bg-white overflow-hidden mt-1.5 text-accent-primary px-3 rounded-lg transition-all duration-300 ease-in-out max-h-0"
     >
       <a
         href="index.html"
-        class="block px-4 py-2 text-gray-700 hover:bg-secondary rounded-lg hover:text-white"
+        class="block px-4 py-2 text-accent-primary hover:bg-secondary rounded-lg hover:text-white"
         >Home</a
       >
       <a
         href="about-us.html"
-        class="block px-4 py-2 text-gray-700 hover:bg-secondary rounded-lg hover:text-white"
+        class="block px-4 py-2 text-accent-primary hover:bg-secondary rounded-lg hover:text-white"
         >About Us</a
       >
       <!-- Mobile Dropdown -->
       <div class="relative">
         <button
           onclick="toggleMobileDropdown()"
-          class="w-full flex items-center gap-3 uppercase text-left px-4 py-2 text-gray-700 hover:bg-secondary rounded-lg hover:text-white"
+          class="w-full flex items-center gap-3 uppercase text-left px-4 py-2 text-accent-primary hover:bg-secondary rounded-lg hover:text-white"
         >
           Product
           <svg
@@ -171,26 +182,36 @@
         >
           <div class="rounded-lg py-2 px-4">
             <a
-              href="#"
-              class="block px-4 py-2 text-gray-700 hover:bg-secondary rounded-lg hover:text-white"
-              >Product 1</a
+              href="product.html#garlic"
+              class="block px-4 py-2 hover:bg-secondary rounded-lg hover:text-white transition-colors"
+              >garlic</a
+            >
+            <a
+              href="product.html#onion"
+              class="block px-4 py-2 hover:bg-secondary rounded-lg hover:text-white transition-colors"
+              >onion</a
+            >
+            <a
+              href="product.html#ginger"
+              class="block px-4 py-2 hover:bg-secondary rounded-lg hover:text-white transition-colors"
+              >ginger</a
             >
             <a
               href="#"
-              class="block px-4 py-2 text-gray-700 hover:bg-secondary rounded-lg hover:text-white"
-              >Product 2</a
+              class="block px-4 py-2 hover:bg-secondary rounded-lg hover:text-white transition-colors"
+              >Other Product</a
             >
           </div>
         </div>
       </div>
       <a
         href="blog.html"
-        class="block px-4 py-2 text-gray-700 hover:bg-secondary rounded-lg hover:text-white"
+        class="block px-4 py-2 hover:bg-secondary rounded-lg hover:text-white"
         >Blog</a
       >
       <a
         href="contact.html"
-        class="block px-4 py-2 text-gray-700 hover:bg-secondary rounded-lg hover:text-white"
+        class="block px-4 py-2 hover:bg-secondary rounded-lg hover:text-white"
         >Contact Us</a
       >
       <button
@@ -634,7 +655,7 @@
     function toggleMobileDropdown() {
       const dropdown = document.getElementById("mobile-dropdown");
       dropdown.classList.toggle("max-h-0");
-      dropdown.classList.toggle("max-h-40");
+      dropdown.classList.toggle("max-h-45");
       dropdown.classList.toggle("opacity-100");
     }
   </script>

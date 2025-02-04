@@ -178,6 +178,10 @@
     @apply mx-auto px-4 lg:px-24;
   }
 
+  html {
+    @apply scroll-smooth;
+  }
+
   body {
     @apply bg-primary m-0 p-0;
   }
@@ -376,4 +380,29 @@
   transform: translateZ(0);
   will-change: transform;
   transition: transform 0.3s ease-out;
+}
+
+.swiper-slide-active .overlay-content {
+  @apply w-full lg:opacity-0  lg:group-hover:opacity-100 opacity-100 transition-all ease-in-out duration-500 gap-6 p-6 bg-black/40 h-full flex flex-col absolute font-normal text-justify md:text-base text-sm z-20 line-clamp-4;
+}
+
+/* Slide yang tidak aktif */
+.swiper-slide:not(.swiper-slide-active) .card-blog {
+  @apply md:opacity-100 opacity-0;
+}
+
+/* Slide aktif */
+.swiper-slide-active .card-blog {
+  @apply opacity-100;
+}
+
+/* Style default: link belum diklik */
+/* Tautan non-aktif */
+.wrap-quick-link a span:last-child {
+  @apply font-light text-accent-primary;
+}
+
+/* Tautan aktif */
+.wrap-quick-link a.active span:last-child {
+  @apply text-secondary font-semibold;
 }
