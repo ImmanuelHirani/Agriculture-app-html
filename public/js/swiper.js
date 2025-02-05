@@ -452,12 +452,12 @@ const mod9Swiper = new Swiper(".mod-9-swiper", {
   breakpoints: {
     360: {
       // Mobile-first
-      slidesPerView: 1.2,
+      slidesPerView: 1.1,
       spaceBetween: 8,
     },
     768: {
       // Tablet
-      slidesPerView: 2.1,
+      slidesPerView: 1.5,
       spaceBetween: 14,
     },
     1024: {
@@ -468,7 +468,7 @@ const mod9Swiper = new Swiper(".mod-9-swiper", {
     },
     1280: {
       // Large desktop
-      slidesPerView: 3.1,
+      slidesPerView: 2.5,
       spaceBetween: 8,
       // slidesPerGroup: 2,
     },
