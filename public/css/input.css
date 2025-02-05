@@ -398,11 +398,21 @@
 
 /* Style default: link belum diklik */
 /* Tautan non-aktif */
-.wrap-quick-link a span:last-child {
-  @apply font-light text-accent-primary;
+.wrap-quick-link > a {
+  @apply md:font-light font-semibold md:text-secondary text-white bg-transparent;
 }
 
 /* Tautan aktif */
-.wrap-quick-link a.active span:last-child {
-  @apply text-secondary font-semibold;
+.wrap-quick-link > a.active {
+  @apply md:text-secondary text-white font-semibold md:bg-transparent bg-secondary;
+}
+
+/* Tautan non-aktif */
+.wrapper-toggler > button {
+  @apply font-semibold text-white;
+}
+
+/* Active button */
+.wrapper-toggler > button.active {
+  @apply text-white font-semibold bg-secondary;
 }

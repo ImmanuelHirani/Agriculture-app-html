@@ -315,7 +315,7 @@
           class="wrapper-toggler flex flex-nowrap items-center gap-6 overflow-x-auto"
         >
           <button
-            class="py-4 font-semibold w-full whitespace-nowrap cursor-pointer uppercase md:px-20 px-10 bg-secondary rounded-2xl"
+            class="py-4 font-semibold w-full whitespace-nowrap cursor-pointer uppercase md:px-20 px-10 rounded-2xl"
           >
             usage methods
           </button>
@@ -325,6 +325,7 @@
             usage methods
           </button>
         </div>
+
         <div class="description font-light md:text-lg text-base">
           Fertilizer use varies depending on soil, plant and climate. We
           recommend that you get support from the dealer or agricultural
@@ -659,6 +660,26 @@
       dropdown.classList.toggle("opacity-100");
     }
   </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Get all buttons inside .wrapper-toggler
+      const buttons = document.querySelectorAll(".wrapper-toggler button");
+
+      // Activate the first button by default
+      if (buttons.length > 0) {
+        buttons[0].classList.add("active");
+      }
+
+      // Add click event to toggle the "active" class
+      buttons.forEach((button) => {
+        button.addEventListener("click", (e) => {
+          buttons.forEach((btn) => btn.classList.remove("active"));
+          e.currentTarget.classList.add("active");
+        });
+      });
+    });
+  </script>
+
   <script src="./public/js/counter.js"></script>
   <script src="./public/js/quick-link.js"></script>
 </html>
