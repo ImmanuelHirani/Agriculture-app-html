@@ -491,6 +491,23 @@ const mod9Swiper = new Swiper(".mod-9-swiper", {
   // noSwipingClass: "swiper-slide",
 });
 
+// Initialize the thumbnail swiper first
+var mod10_1swiper = new Swiper(".mod-10-1-swiper", {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
+
+// Initialize the main swiper and link it to the thumbnail swiper
+var mod10swiper = new Swiper(".mod-10-swiper", {
+  spaceBetween: 10,
+
+  thumbs: {
+    swiper: mod10_1swiper,
+  },
+});
+
 // Tambahkan event listener untuk memastikan perpindahan ke item berikutnya
 
 // Force continuous autoplay reset

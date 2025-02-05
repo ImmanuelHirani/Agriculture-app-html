@@ -233,23 +233,118 @@
   <body class="relative">
     <!-- High Quality Intro -->
     <!-- Hero section -->
-    <section class="md:mt-24 mt-16 py-12 text-secondary md:py-24">
+    <section class="lg:mt-20 mt-12 py-12 text-secondary md:py-24">
       <div class="container grid md:grid-cols-12 grid-cols-1 lg:gap-14 gap-7">
         <!-- Image Section -->
         <div
-          class="md:col-span-6 lg:relative md:sticky lg:top-0 md:top-36 flex items-center justify-center h-fit w-full bg-secondary rounded-3xl"
+          class="md:col-span-6 lg:relative flex flex-col gap-3 md:sticky lg:top-0 md:top-32 h-fit w-full rounded-3xl"
         >
-          <img
-            src="./public/assets/Chilli.png"
-            alt="Chili Prime"
-            class="w-fit rounded-3xl h-fit"
-          />
+          <!-- Main Swiper -->
+          <div
+            style="
+              --swiper-navigation-color: #fff;
+              --swiper-pagination-color: #fff;
+            "
+            class="swiper mod-10-swiper"
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="image-wrap lg:h-[28rem] h-[17rem]">
+                  <img
+                    class="object-cover w-full h-full"
+                    src="https://t3.ftcdn.net/jpg/02/57/54/58/360_F_257545862_MK4YSramzD8GICDZEQygA0nUQUaSiLvu.jpg"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image-wrap lg:h-[28rem] h-[17rem]">
+                  <img
+                    class="object-cover w-full h-full"
+                    src="https://media.istockphoto.com/id/1340230644/photo/closeup-of-garlic-bulbs-on-wooden-table-with-garlics-blur-background-a-set-of-fresh-garlic-on.jpg?s=612x612&w=0&k=20&c=ViGupj8zL6dDwWKe79V5R2J_NyUqIMLpHduY1e58LGM="
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image-wrap lg:h-[28rem] h-[17rem]">
+                  <img
+                    class="object-cover w-full h-full"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeJln18PepWvxCwcoh4v1ydXyto5p6J9ztcA&s"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image-wrap lg:h-[28rem] h-[17rem]">
+                  <img
+                    class="object-cover w-full h-full"
+                    src="https://media.istockphoto.com/id/1010105320/photo/young-garlic-on-the-ground-freshly-harvested-fresh-harvest.jpg?s=612x612&w=0&k=20&c=K96s6I717nCM2MuXwFfva83ryoUd35RVRu-N5_dAhsU="
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image-wrap lg:h-[28rem] h-[17rem]">
+                  <img
+                    class="object-cover w-full h-full"
+                    src="https://static.toiimg.com/photo/107111687.cms"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Thumbnails Swiper (placed after the main swiper to appear at the bottom) -->
+          <div class="swiper mod-10-1-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="image-wrap lg:h-[8rem] md:h-[6rem] h-[5rem]">
+                  <img
+                    class="object-cover w-full h-full"
+                    src="https://t3.ftcdn.net/jpg/02/57/54/58/360_F_257545862_MK4YSramzD8GICDZEQygA0nUQUaSiLvu.jpg"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image-wrap lg:h-[8rem] md:h-[6rem] h-[5rem]">
+                  <img
+                    class="object-cover w-full h-full"
+                    src="https://media.istockphoto.com/id/1340230644/photo/closeup-of-garlic-bulbs-on-wooden-table-with-garlics-blur-background-a-set-of-fresh-garlic-on.jpg?s=612x612&w=0&k=20&c=ViGupj8zL6dDwWKe79V5R2J_NyUqIMLpHduY1e58LGM="
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image-wrap lg:h-[8rem] md:h-[6rem] h-[5rem]">
+                  <img
+                    class="object-cover w-full h-full"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeJln18PepWvxCwcoh4v1ydXyto5p6J9ztcA&s"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image-wrap lg:h-[8rem] md:h-[6rem] h-[5rem]">
+                  <img
+                    class="object-cover w-full h-full"
+                    src="https://media.istockphoto.com/id/1010105320/photo/young-garlic-on-the-ground-freshly-harvested-fresh-harvest.jpg?s=612x612&w=0&k=20&c=K96s6I717nCM2MuXwFfva83ryoUd35RVRu-N5_dAhsU="
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image-wrap lg:h-[8rem] md:h-[6rem] h-[5rem]">
+                  <img
+                    class="object-cover w-full h-full"
+                    src="https://static.toiimg.com/photo/107111687.cms"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- Content Section -->
-        <div class="md:col-span-6 flex flex-col md:gap-8 gap-6">
+        <div
+          class="md:col-span-6 md:sticky h-fit md:top-32 top-0 flex flex-col md:gap-8 gap-6"
+        >
           <!-- Title & Description -->
           <div class="flex flex-col gap-3 md:gap-3">
-            <p class="text-xl font-bold md:text-4xl md:leading-normal">
+            <p
+              class="text-xl font-bold lg:text-4xl md:text-3xl md:leading-normal"
+            >
               Chili Prime - Cabai Berkualitas Premium
             </p>
             <p class="text-base font-light text-justify">
@@ -258,23 +353,22 @@
               hingga industri makanan...
             </p>
           </div>
-
           <!-- Category & Button -->
           <div class="flex flex-col gap-4 md:gap-6">
             <hr />
-            <p class="font-semibold uppercase">Category: (Chilli)</p>
+            <p class="font-semibold uppercase">Category: (garlic)</p>
             <hr />
-            <a href="#">
+            <a href="https://wa.link/g936ry" target="_blank">
               <button
                 class="relative cursor-pointer overflow-hidden px-4 md:px-6 py-4 bg-accent-primary rounded-full text-white hover:bg-accent-primary font-medium transition-all duration-300 active:scale-95 group"
               >
                 <span
                   class="relative z-30 flex items-center gap-3 text-sm uppercase md:text-base"
                 >
-                  All product
+                  send inquary
                   <img
-                    src="./public/assets/right-arrow.svg"
-                    class="w-[1.5rem] md:w-[2rem]"
+                    src="./public/assets/question-marks.svg"
+                    class="w-[1.5rem]"
                     alt=""
                   />
                 </span>
@@ -317,22 +411,83 @@
           class="wrapper-toggler flex flex-nowrap items-center gap-6 overflow-x-auto"
         >
           <button
-            class="py-4 font-semibold w-full whitespace-nowrap cursor-pointer uppercase md:px-20 px-10 rounded-2xl"
+            class="tabs-toggle py-4 font-semibold w-full whitespace-nowrap cursor-pointer uppercase md:px-20 px-10 rounded-2xl"
           >
-            usage methods
+            product description
           </button>
           <button
-            class="py-4 font-semibold w-full whitespace-nowrap cursor-pointer uppercase md:px-20 px-10 rounded-2xl"
+            class="tabs-toggle py-4 font-semibold w-full whitespace-nowrap cursor-pointer uppercase md:px-20 px-10 rounded-2xl"
           >
-            usage methods
+            packaging
           </button>
         </div>
 
-        <div class="description font-light md:text-lg text-base">
-          Fertilizer use varies depending on soil, plant and climate. We
-          recommend that you get support from the dealer or agricultural
-          engineer you purchased from by having a soil and/or leaf analysis
-          done.
+        <div class="tabs-content w-full font-light md:text-xl text-base">
+          <div class="mb-6">
+            <h3 class="font-semibold mb-2">Inner Packing:</h3>
+            <ul class="list-disc pl-6">
+              <li>Fresh-preserved plastic bag</li>
+              <li>Paper salver for each layer</li>
+              <li>Foam sheet top protection</li>
+              <li>Individual net covering for each apple</li>
+            </ul>
+          </div>
+
+          <div class="mb-6">
+            <h3 class="font-semibold mb-2">Outer Packing:</h3>
+            <ol class="list-decimal pl-6">
+              <li>5kg/CTN (Sizes: 12,14,16,18,20,22)</li>
+              <li>9kg/CTN (Sizes: 24,28,32,36,40,44)</li>
+              <li>10kg/CTN (Sizes: 24,28,32,36,40,44)</li>
+              <li>15kg/CTN (Sizes: 54,60,66,80,90)</li>
+              <li>18kg/CTN (Sizes: 64,72,80,88,100,125,138,150,163,175)</li>
+              <li>
+                20kg/CTN (Sizes:
+                64,72,80,88,100,113,125,138,150,163,175,198,216)
+              </li>
+            </ol>
+          </div>
+
+          <div>
+            <h3 class="font-semibold mb-2">Customized Packing:</h3>
+            <p>Available according to client specifications and requirements</p>
+          </div>
+        </div>
+        <div class="tabs-content w-full font-light md:text-xl text-base">
+          <div class="mb-6">
+            <h3 class="font-semibold mb-2">Sizes:</h3>
+            <ul class="list-disc pl-6">
+              <li>
+                Diameter ranges: 60mm-65mm, 65mm-70mm, 70mm-75mm, 75mm-80mm,
+                80mm & up
+              </li>
+              <li>Average weight: 180g-300g per apple</li>
+              <li>Maximum weight: 400g or more</li>
+            </ul>
+          </div>
+
+          <div class="mb-6">
+            <h3 class="font-semibold mb-2">Advantages:</h3>
+            <ul class="list-disc pl-6">
+              <li>Large size with no surface defects</li>
+              <li>Durable for transportation and storage</li>
+              <li>Excellent shape, crisp texture, and delicious flavor</li>
+              <li>Rich in vitamins, minerals, and nutrients</li>
+              <li>
+                Nutritional values:
+                <ul class="list-circle pl-4">
+                  <li>Soluble solids: 15.3%-16%</li>
+                  <li>Acid content: 0.2%-0.4%</li>
+                  <li>Sugar content: Up to 17%</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="font-semibold mb-2">Supply Period:</h3>
+            <p>Available year-round</p>
+          </div>
         </div>
       </div>
     </section>
@@ -371,7 +526,7 @@
               >
                 <img
                   src="https://www.veggycation.com.au/siteassets/veggycationvegetable/garlic.jpg"
-                  class="group-hover:scale-125 object-cover h-full transition-all ease-in-out duration-500"
+                  class="group-hover:scale-125 object-cover w-full h-full transition-all ease-in-out duration-500"
                   alt=""
                 />
 
@@ -395,7 +550,7 @@
               >
                 <img
                   src="https://www.veggycation.com.au/siteassets/veggycationvegetable/garlic.jpg"
-                  class="group-hover:scale-125 object-cover h-full transition-all ease-in-out duration-500"
+                  class="group-hover:scale-125 object-cover w-full h-full transition-all ease-in-out duration-500"
                   alt=""
                 />
 
@@ -419,7 +574,7 @@
               >
                 <img
                   src="https://www.veggycation.com.au/siteassets/veggycationvegetable/garlic.jpg"
-                  class="group-hover:scale-125 object-cover h-full transition-all ease-in-out duration-500"
+                  class="group-hover:scale-125 object-cover w-full h-full transition-all ease-in-out duration-500"
                   alt=""
                 />
 
@@ -443,7 +598,7 @@
               >
                 <img
                   src="https://www.veggycation.com.au/siteassets/veggycationvegetable/garlic.jpg"
-                  class="group-hover:scale-125 object-cover h-full transition-all ease-in-out duration-500"
+                  class="group-hover:scale-125 object-cover w-full h-full transition-all ease-in-out duration-500"
                   alt=""
                 />
 
@@ -660,19 +815,45 @@
   </script>
   <script>
     document.addEventListener("DOMContentLoaded", () => {
-      // Get all buttons inside .wrapper-toggler
-      const buttons = document.querySelectorAll(".wrapper-toggler button");
+      // Toggle active state for buttons inside .wrapper-toggler
+      const togglerButtons = document.querySelectorAll(
+        ".wrapper-toggler button"
+      );
 
-      // Activate the first button by default
-      if (buttons.length > 0) {
-        buttons[0].classList.add("active");
+      if (togglerButtons.length > 0) {
+        togglerButtons[0].classList.add("active");
+      }
+      togglerButtons.forEach((button) => {
+        button.addEventListener("click", (e) => {
+          togglerButtons.forEach((btn) => btn.classList.remove("active"));
+          e.currentTarget.classList.add("active");
+        });
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const tabButtons = document.querySelectorAll(".wrapper-toggler button");
+      const tabContents = document.querySelectorAll(".tabs-content");
+
+      // Set default active tab (first one)
+      if (tabButtons.length && tabContents.length) {
+        tabButtons[0].classList.add("active");
+        tabContents[0].classList.add("active-tabs-content");
       }
 
-      // Add click event to toggle the "active" class
-      buttons.forEach((button) => {
-        button.addEventListener("click", (e) => {
-          buttons.forEach((btn) => btn.classList.remove("active"));
-          e.currentTarget.classList.add("active");
+      // Unified click event for tab buttons
+      tabButtons.forEach((button, index) => {
+        button.addEventListener("click", () => {
+          // Remove active classes from all buttons and contents
+          tabButtons.forEach((btn) => btn.classList.remove("active"));
+          tabContents.forEach((content) =>
+            content.classList.remove("active-tabs-content")
+          );
+
+          // Activate clicked button and corresponding content
+          button.classList.add("active");
+          tabContents[index].classList.add("active-tabs-content");
         });
       });
     });

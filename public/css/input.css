@@ -416,3 +416,7 @@
 .wrapper-toggler > button.active {
   @apply text-white font-semibold bg-secondary;
 }
+
+.active-tabs-content {
+  @apply hidden;
+}
