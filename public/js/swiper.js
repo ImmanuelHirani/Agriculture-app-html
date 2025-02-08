@@ -441,6 +441,13 @@ const mod9Swiper = new Swiper(".mod-9-swiper", {
   // followFinger: false,
   // allowTouchMove: false,
 
+  // Navigation enhancements
+  navigation: {
+    nextEl: ".button-next-product",
+    prevEl: ".button-prev-product",
+    // disabledClass: "swiper-button-disabled opacity-30 cursor-not-allowed",
+  },
+
   // // Core configuration
   // autoHeight: true,
   resistanceRatio: 0,
@@ -468,7 +475,7 @@ const mod9Swiper = new Swiper(".mod-9-swiper", {
     },
     1280: {
       // Large desktop
-      slidesPerView: 2.5,
+      slidesPerView: 3,
       spaceBetween: 8,
       // slidesPerGroup: 2,
     },
