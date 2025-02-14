@@ -3,55 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link path content Tailwindcss output -->
     <link href="./public/css/output.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    <!-- Link path content Tailwindcss output End -->
+    <!-- Swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Swiper js End -->
+    <!-- Goggle Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <!-- Goggle Font end -->
   </head>
   <!-- Navbar -->
-  <nav
-    class="z-50 text-base font-semibold fixed container w-full md:top-8 top-4 uppercase starting:h-auto h-fit mx-auto right-1/2 translate-x-1/2"
-  >
+  <nav class="z-50 text-base font-semibold fixed container w-full md:top-8 top-4 uppercase starting:h-auto h-fit mx-auto right-1/2 translate-x-1/2">
+    <!-- Desktop Navbar -->
     <div
       class="bg-white w-full mx-auto shadow-md md:py-5 py-3.5 transition-all ease-in-out duration-300 rounded-lg flex justify-between items-center md:px-8 px-4"
     >
-      <div
-        class="flex items-center space-x-3 lg:w-[22.5%] md:w-[16rem] w-[13.5rem]"
-      >
-        <img
-          src="./public/assets/logo.svg"
-          alt="Logo"
-          class="w-full object-contain"
-        />
+      <!-- Logo -->
+      <div class="flex items-center space-x-3 lg:w-[22.5%] md:w-[16rem] w-[13.5rem]">
+        <img src="./public/assets/logo.svg" alt="Logo" class="w-full object-contain" />
       </div>
-      <!-- Desktop Navigation -->
-      <div
-        class="hidden lg:flex mx-auto gap-14 items-center justify-center w-fit"
-      >
-        <a
-          href="index.html"
-          class="text-accent-primary hover:text-secondary transition-colors"
-          >Home</a
-        >
-        <a
-          href="about-us.html"
-          class="text-accent-primary hover:text-secondary transition-colors"
-          >About Us</a
-        >
+      <!-- Logo End -->
+      <!-- Menu link -->
+      <div class="hidden lg:flex mx-auto gap-14 items-center justify-center w-fit">
+        <a href="index.html" class="text-accent-primary hover:text-secondary transition-colors">Home</a>
+        <a href="about-us.html" class="text-accent-primary hover:text-secondary transition-colors">About Us</a>
 
         <!-- Desktop Dropdown -->
         <div class="relative group">
-          <a
-            href="product.html"
-            class="flex items-center gap-3 cursor-pointer text-accent-primary uppercase hover:text-secondary transition-colors"
-          >
+          <a href="product.html" class="flex items-center gap-3 cursor-pointer text-accent-primary uppercase hover:text-secondary transition-colors">
             Product
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -61,101 +46,46 @@
               stroke="currentColor"
               class="w-5 h-5 ml-1 transition-transform group-hover:rotate-180"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M19 9l-7 7-7-7"
-              />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
             </svg>
           </a>
           <div
             class="absolute left-0 mt-[45%] text-accent-primary w-max rounded-lg px-2 py-2 flex flex-col shadow-lg bg-white opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300"
           >
-            <a
-              href="product.html#garlic"
-              class="block px-6 py-2 hover:bg-secondary rounded-lg hover:text-white transition-colors"
-              >garlic</a
-            >
-            <a
-              href="product.html#onion"
-              class="block px-6 py-2 hover:bg-secondary rounded-lg hover:text-white transition-colors"
-              >onion</a
-            >
-            <a
-              href="product.html#ginger"
-              class="block px-6 py-2 hover:bg-secondary rounded-lg hover:text-white transition-colors"
-              >ginger</a
-            >
-            <a
-              href="product.html#"
-              class="block px-6 py-2 hover:bg-secondary rounded-lg hover:text-white transition-colors"
-              >Other Product</a
-            >
+            <a href="product.html#garlic" class="block px-6 py-2 hover:bg-secondary rounded-lg hover:text-white transition-colors">garlic</a>
+            <a href="product.html#onion" class="block px-6 py-2 hover:bg-secondary rounded-lg hover:text-white transition-colors">onion</a>
+            <a href="product.html#ginger" class="block px-6 py-2 hover:bg-secondary rounded-lg hover:text-white transition-colors">ginger</a>
+            <a href="product.html#" class="block px-6 py-2 hover:bg-secondary rounded-lg hover:text-white transition-colors">Other Product</a>
           </div>
         </div>
 
-        <a
-          href="blog.html"
-          class="text-accent-primary hover:text-secondary transition-colors"
-          >Blog</a
-        >
-        <a
-          href="contact.html"
-          class="text-accent-primary hover:text-secondary transition-colors"
-          >Contact Us</a
-        >
+        <a href="blog.html" class="text-accent-primary hover:text-secondary transition-colors">Blog</a>
+        <a href="contact.html" class="text-accent-primary hover:text-secondary transition-colors">Contact Us</a>
       </div>
-
-      <!-- Language & Mobile Menu Button -->
+      <!-- Menu link End -->
+      <!-- Language & Mobile Menu Button Humburger -->
       <div class="wrap flex items-center gap-3">
-        <button
-          class="bg-secondary uppercase text-white py-3 px-4 w-fit lg:block hidden rounded-full"
-        >
+        <!-- Lang Dekstop Only -->
+        <button class="bg-secondary uppercase text-white py-3 px-4 w-fit lg:block hidden rounded-full">
           <span class="flex items-center gap-2">
-            <img
-              src="./public/assets/world.svg"
-              alt="Language"
-              class="w-[40%]"
-            />
+            <img src="./public/assets/world.svg" alt="Language" class="w-[40%]" />
             <p>cn</p>
           </span>
         </button>
-        <button
-          onclick="toggleMobileMenu()"
-          class="lg:hidden text-secondary focus:outline-none"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="2"
-            stroke="currentColor"
-            class="w-8 h-8"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M4 6h16M4 12h16M4 18h16"
-            />
+        <!-- Lang Dekstop Only End -->
+        <!-- Humburger Menu Mobile Only -->
+        <button onclick="toggleMobileMenu()" class="lg:hidden text-secondary focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-8 h-8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </button>
+        <!-- Humburger Menu Mobile Only End -->
       </div>
     </div>
-    <!-- Mobile Menu -->
-    <div
-      id="mobile-menu"
-      class="lg:hidden bg-white overflow-hidden mt-1.5 text-accent-primary px-3 rounded-lg transition-all duration-300 ease-in-out max-h-0"
-    >
-      <a
-        href="index.html"
-        class="block px-4 py-2 text-accent-primary hover:bg-secondary rounded-lg hover:text-white"
-        >Home</a
-      >
-      <a
-        href="about-us.html"
-        class="block px-4 py-2 text-accent-primary hover:bg-secondary rounded-lg hover:text-white"
-        >About Us</a
-      >
+    <!-- Mobile Navbar -->
+    <div id="mobile-menu" class="lg:hidden bg-white overflow-hidden mt-1.5 text-accent-primary px-3 rounded-lg transition-all duration-300 ease-in-out max-h-0">
+      <a href="index.html" class="block px-4 py-2 text-accent-primary hover:bg-secondary rounded-lg hover:text-white">Home</a>
+      <a href="about-us.html" class="block px-4 py-2 text-accent-primary hover:bg-secondary rounded-lg hover:text-white">About Us</a>
       <!-- Mobile Dropdown -->
       <div class="relative">
         <button
@@ -163,368 +93,250 @@
           class="w-full flex items-center gap-3 uppercase text-left px-4 py-2 text-accent-primary hover:bg-secondary rounded-lg hover:text-white"
         >
           Product
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="2"
-            stroke="currentColor"
-            class="w-4 h-4 ml-1"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M19 9l-7 7-7-7"
-            />
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 ml-1">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
           </svg>
         </button>
-        <div
-          id="mobile-dropdown"
-          class="overflow-hidden transition-all ease-in-out duration-300 max-h-0"
-        >
+        <div id="mobile-dropdown" class="overflow-hidden transition-all ease-in-out duration-300 max-h-0">
           <div class="rounded-lg py-2 px-4 text-accent-primary">
-            <a
-              href="product.html#garlic"
-              class="block px-4 py-2 hover:bg-secondary rounded-lg hover:text-white transition-colors"
-              >garlic</a
-            >
-            <a
-              href="product.html#onion"
-              class="block px-4 py-2 hover:bg-secondary rounded-lg hover:text-white transition-colors"
-              >onion</a
-            >
-            <a
-              href="product.html#ginger"
-              class="block px-4 py-2 hover:bg-secondary rounded-lg hover:text-white transition-colors"
-              >ginger</a
-            >
-            <a
-              href="#"
-              class="block px-4 py-2 hover:bg-secondary rounded-lg hover:text-white transition-colors"
-              >Other Product</a
-            >
+            <a href="product.html#garlic" class="block px-4 py-2 hover:bg-secondary rounded-lg hover:text-white transition-colors">garlic</a>
+            <a href="product.html#onion" class="block px-4 py-2 hover:bg-secondary rounded-lg hover:text-white transition-colors">onion</a>
+            <a href="product.html#ginger" class="block px-4 py-2 hover:bg-secondary rounded-lg hover:text-white transition-colors">ginger</a>
+            <a href="#" class="block px-4 py-2 hover:bg-secondary rounded-lg hover:text-white transition-colors">Other Product</a>
           </div>
         </div>
       </div>
-      <a
-        href="blog.html"
-        class="block px-4 py-2 hover:bg-secondary rounded-lg hover:text-white"
-        >Blog</a
-      >
-      <a
-        href="contact.html"
-        class="block px-4 py-2 hover:bg-secondary rounded-lg hover:text-white"
-        >Contact Us</a
-      >
-      <button
-        class="bg-secondary text-white py-1.5 mt-2 px-3 w-full lg:hidden rounded-lg"
-      >
+      <!-- Mobile Dropdown End -->
+      <a href="blog.html" class="block px-4 py-2 hover:bg-secondary rounded-lg hover:text-white">Blog</a>
+      <a href="contact.html" class="block px-4 py-2 hover:bg-secondary rounded-lg hover:text-white">Contact Us</a>
+      <!-- Lang Mobile Only -->
+      <button class="bg-secondary text-white py-1.5 mt-2 px-3 w-full lg:hidden rounded-lg">
         <div class="flex items-center justify-center gap-2">
-          <img
-            src="./public/assets/world.svg"
-            alt="Language"
-            class="w-[1.5rem]"
-          />
+          <img src="./public/assets/world.svg" alt="Language" class="w-[1.5rem]" />
           <p class="text-lg uppercase">en</p>
         </div>
       </button>
+      <!-- Lang Mobile Only End -->
     </div>
   </nav>
+  <!-- Navbar End -->
   <body class="relative">
     <!-- Hero section -->
-    <section id=" mod-1" class="h-lvh !mt-0 overflow-hidden">
-      <div
-        style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
-        class="swiper mod-1-swiper"
-      >
+    <section id="content-1" class="h-lvh !mt-0 overflow-hidden">
+      <!-- Swiper parent !note : All Item related to this section if put outside the parent is not usable -->
+      <!-- Swiper parent class !: "swiper" -->
+      <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mod-1-swiper">
+        <!-- Paralax Background -->
+        <!-- To change the image background dynamicly -->
         <div
           class="parallax-bg relative after:absolute after:w-full after:h-full after:bg-black after:opacity-70"
           style="background-image: url('./public/assets/Hero-section.png')"
           data-swiper-parallax="-23%"
         ></div>
+        <!-- Paralax Background End -->
+        <!-- Swiper-wrapper (Secondary Content Parent) -->
         <div class="swiper-wrapper">
+          <!-- Swiper-slide : must be cover in swiper-slide otherwise is not considering as an swiper-js item diffrent case with the background cuase it has it own rules -->
           <div class="swiper-slide">
             <div class="container h-full">
-              <div
-                class="wrap items-center h-full justify-center lg:grid grid-cols-12 flex flex-col-reverse gap-6"
-              >
-                <div
-                  class="wrapper col-span-7 text-center lg:mx-0 mx-auto lg:text-left"
-                >
-                  <p
-                    class="text-lg sm:text-2xl flex flex-col gap-1 lg:items-start items-center justify-center font-semibold"
-                    data-swiper-parallax="-300"
-                  >
+              <div class="wrap items-center h-full justify-center lg:grid grid-cols-12 flex flex-col-reverse gap-6">
+                <!-- Grid 1 -->
+                <div class="wrapper col-span-7 text-center lg:mx-0 mx-auto lg:text-left">
+                  <!-- Title Case -->
+                  <p class="text-lg sm:text-2xl flex flex-col gap-1 lg:items-start items-center justify-center font-semibold" data-swiper-parallax="-300">
                     Original & Natural
-                    <img
-                      src="./public/assets/sratch.svg"
-                      class="w-[30%] mx-auto md:mx-0"
-                      alt=""
-                    />
+                    <img src="./public/assets/sratch.svg" class="w-[30%] mx-auto md:mx-0" alt="" />
                   </p>
                   <div
                     class="wrap-title text-3xl flex flex-col md:gap-3 md:text-5xl lg:text-7xl space-y-2 font-bold text-secondary"
                     data-swiper-parallax="-200"
                   >
                     <span>Agriculture Matter</span>
-                    <span class="text-white block md:inline"
-                      >Good Production</span
-                    >
+                    <span class="text-white block md:inline">Good Production</span>
                   </div>
-                  <p
-                    class="text-sm sm:text-base md:text-2xl font-light my-6 max-w-xl mx-auto md:mx-0"
-                    data-swiper-parallax="-100"
-                  >
-                    Dissuade ecstatic and properly saw entirely sir why laughter
-                    endeavor.
+                  <p class="text-sm sm:text-base md:text-2xl font-light my-6 max-w-xl mx-auto md:mx-0" data-swiper-parallax="-100">
+                    Dissuade ecstatic and properly saw entirely sir why laughter endeavor.
                   </p>
+                  <!-- Title Case End -->
                 </div>
-                <img
-                  src="./public/assets/Ilustrator-1.png"
-                  class="col-span-5 md:w-[90%] w-full lg:w-auto mx-auto"
-                  alt=""
-                />
+                <!-- Grid 2 -->
+                <!-- Right content image -->
+                <img src="./public/assets/Ilustrator-1.png" class="col-span-5 md:w-[90%] w-full lg:w-auto mx-auto" alt="" />
+                <!-- Right content image end -->
               </div>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="container h-full">
-              <div
-                class="wrap items-center h-full justify-center lg:grid grid-cols-12 flex flex-col-reverse gap-6"
-              >
-                <div
-                  class="wrapper col-span-7 text-center lg:mx-0 mx-auto lg:text-left"
-                >
-                  <p
-                    class="text-lg sm:text-2xl flex flex-col gap-1 lg:items-start items-center justify-center font-semibold"
-                    data-swiper-parallax="-300"
-                  >
+              <div class="wrap items-center h-full justify-center lg:grid grid-cols-12 flex flex-col-reverse gap-6">
+                <!-- Grid 1 -->
+                <div class="wrapper col-span-7 text-center lg:mx-0 mx-auto lg:text-left">
+                  <!-- Title Case -->
+                  <p class="text-lg sm:text-2xl flex flex-col gap-1 lg:items-start items-center justify-center font-semibold" data-swiper-parallax="-300">
                     Original & Natural
-                    <img
-                      src="./public/assets/sratch.svg"
-                      class="w-[30%] mx-auto md:mx-0"
-                      alt=""
-                    />
-                  </p>
-                  <div
-                    class="wrap-title text-3xl flex flex-col md:gap-3 md:text-5xl lg:text-7xl space-y-2 font-bold text-secondary"
-                    data-swiper-parallax="-200"
-                  >
-                    <span>Sustainable Farming</span>
-                    <span class="text-white block md:inline"
-                      >Good Production</span
-                    >
-                  </div>
-                  <p
-                    class="text-sm sm:text-base md:text-2xl font-light my-6 max-w-xl mx-auto md:mx-0"
-                    data-swiper-parallax="-100"
-                  >
-                    Innovation in farming techniques to ensure sustainability
-                    and productivity.
-                  </p>
-                </div>
-                <img
-                  src="./public/assets/Ilustrator-1.png"
-                  class="col-span-5 md:w-[90%] w-full lg:w-auto mx-auto"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="container h-full">
-              <div
-                class="wrap items-center h-full justify-center lg:grid grid-cols-12 flex flex-col-reverse gap-6"
-              >
-                <div
-                  class="wrapper col-span-7 text-center lg:mx-0 mx-auto lg:text-left"
-                >
-                  <p
-                    class="text-lg sm:text-2xl flex flex-col gap-1 lg:items-start items-center justify-center font-semibold"
-                    data-swiper-parallax="-300"
-                  >
-                    Original & Natural
-                    <img
-                      src="./public/assets/sratch.svg"
-                      class="w-[30%] mx-auto md:mx-0"
-                      alt=""
-                    />
+                    <img src="./public/assets/sratch.svg" class="w-[30%] mx-auto md:mx-0" alt="" />
                   </p>
                   <div
                     class="wrap-title text-3xl flex flex-col md:gap-3 md:text-5xl lg:text-7xl space-y-2 font-bold text-secondary"
                     data-swiper-parallax="-200"
                   >
                     <span>Agriculture Matter</span>
-                    <span class="text-white block md:inline"
-                      >Good Production</span
-                    >
+                    <span class="text-white block md:inline">Good Production</span>
                   </div>
-                  <p
-                    class="text-sm sm:text-base md:text-2xl font-light my-6 max-w-xl mx-auto md:mx-0"
-                    data-swiper-parallax="-100"
-                  >
-                    Enhancing the production quality through better methods and
-                    practices.
+                  <p class="text-sm sm:text-base md:text-2xl font-light my-6 max-w-xl mx-auto md:mx-0" data-swiper-parallax="-100">
+                    Dissuade ecstatic and properly saw entirely sir why laughter endeavor.
                   </p>
+                  <!-- Title Case End -->
                 </div>
-                <img
-                  src="./public/assets/Ilustrator-1.png"
-                  class="col-span-5 md:w-[90%] w-full lg:w-auto mx-auto"
-                  alt=""
-                />
+                <!-- Grid 2 -->
+                <!-- Right content image -->
+                <img src="./public/assets/Ilustrator-1.png" class="col-span-5 md:w-[90%] w-full lg:w-auto mx-auto" alt="" />
+                <!-- Right content image end -->
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="container h-full">
+              <div class="wrap items-center h-full justify-center lg:grid grid-cols-12 flex flex-col-reverse gap-6">
+                <!-- Grid 1 -->
+                <div class="wrapper col-span-7 text-center lg:mx-0 mx-auto lg:text-left">
+                  <!-- Title Case -->
+                  <p class="text-lg sm:text-2xl flex flex-col gap-1 lg:items-start items-center justify-center font-semibold" data-swiper-parallax="-300">
+                    Original & Natural
+                    <img src="./public/assets/sratch.svg" class="w-[30%] mx-auto md:mx-0" alt="" />
+                  </p>
+                  <div
+                    class="wrap-title text-3xl flex flex-col md:gap-3 md:text-5xl lg:text-7xl space-y-2 font-bold text-secondary"
+                    data-swiper-parallax="-200"
+                  >
+                    <span>Agriculture Matter</span>
+                    <span class="text-white block md:inline">Good Production</span>
+                  </div>
+                  <p class="text-sm sm:text-base md:text-2xl font-light my-6 max-w-xl mx-auto md:mx-0" data-swiper-parallax="-100">
+                    Dissuade ecstatic and properly saw entirely sir why laughter endeavor.
+                  </p>
+                  <!-- Title Case End -->
+                </div>
+                <!-- Grid 2 -->
+                <!-- Right content image -->
+                <img src="./public/assets/Ilustrator-1.png" class="col-span-5 md:w-[90%] w-full lg:w-auto mx-auto" alt="" />
+                <!-- Right content image end -->
               </div>
             </div>
           </div>
         </div>
+        <!-- Navigation and paggination Wrapper -->
+        <!-- Read It own documentation To understand how to use navigation and paggination otherwise is a'long explaination -->
         <div
           class="absolute container 2xl:bottom-[18%] lg:bottom-[22%] md:bottom-[12%] bottom-[13%] w-full translate-y-1/2 translate-x-1/2 right-1/2 flex items-center md:justify-between justify-center z-10"
         >
-          <div
-            class="toggle-btn md:space-x-4 lg:inline hidden space-x-2 w-full"
-          >
+          <div class="toggle-btn md:space-x-4 lg:inline hidden space-x-2 w-full">
             <button
               class="button-prev-hero md:py-4 py-2 md:px-4 px-2 text-2xl outline-1 outline-white rounded-full hover:outline-none hover:bg-secondary transition ease-in-out duration-300 cursor-pointer"
             >
-              <img
-                src="./public/assets/left-arrow.svg"
-                class="md:w-8 w-6"
-                alt="Previous"
-              />
+              <img src="./public/assets/left-arrow.svg" class="md:w-8 w-6" alt="Previous" />
             </button>
             <button
               class="button-next-hero md:py-4 py-2 md:px-4 px-2 text-2xl outline-1 outline-white rounded-full hover:outline-none hover:bg-secondary transition ease-in-out duration-300 cursor-pointer"
             >
-              <img
-                src="./public/assets/right-arrow.svg"
-                class="md:w-8 w-6"
-                alt="Next"
-              />
+              <img src="./public/assets/right-arrow.svg" class="md:w-8 w-6" alt="Next" />
             </button>
           </div>
           <!-- Pagination -->
-          <div
-            class="pagination-mod-1 flex items-center w-fit lg:justify-end justify-center gap-2"
-          ></div>
+          <div class="pagination-mod-1 flex items-center w-fit lg:justify-end justify-center gap-2"></div>
         </div>
-        <div
-          class="absolute container bottom-[6%] gap-3 translate-y-1/2 translate-x-1/2 right-1/2 flex items-center justify-center md:justify-end z-10"
-        >
-          <p class="text-white font-medium uppercase text-sm sm:text-base">
-            Scroll to Explore
-          </p>
+        <!-- Navigation and paggination Wrapper End -->
+        <!-- Scrool To explore -->
+        <div class="absolute container bottom-[6%] gap-3 translate-y-1/2 translate-x-1/2 right-1/2 flex items-center justify-center z-10">
+          <p class="text-white font-medium uppercase text-sm sm:text-base">Scroll to Explore</p>
           <span class="animate-bounce text-white text-lg sm:text-xl">↓</span>
         </div>
+        <!-- Scrool To explore End -->
       </div>
     </section>
     <!-- Catalog Product -->
-    <section class="lg:py-24 pt-14 overflow-hidden">
+    <section id="content-2" class="lg:py-24 pt-14 overflow-hidden">
       <div class="container">
-        <div
-          class="philosofy-part lg:text-5xl md:text-3xl text-2xl font-semibold flex flex-col lg:space-y-24 md:space-y-14 space-y-8 text-secondary"
-        >
+        <div class="philosofy-part lg:text-5xl md:text-3xl text-2xl font-semibold flex flex-col lg:space-y-24 md:space-y-14 space-y-8 text-secondary">
           <div class="wrap">
-            <p class="md:text-2xl text-base text-center font-light uppercase">
-              Catalog product
-            </p>
-            <p class="leading-normal text-center font-semibold capitalize">
-              our product
-            </p>
+            <p class="md:text-2xl text-base text-center font-light uppercase">Catalog product</p>
+            <p class="leading-normal text-center font-semibold capitalize">our product</p>
           </div>
           <div class="wrapper grid grid-cols-12 gap-4">
             <!-- Left main card -->
             <div
               class="card relative lg:col-span-6 col-span-12 text-white rounded-lg bg-accent-secondary overflow-hidden group h-full flex items-center flex-col justify-center gap-4"
             >
-              <img
-                src="./public/assets/garlic.png"
-                class="group-hover:scale-125 transition-all ease-in-out duration-500"
-                alt="Garlic"
-              />
+              <img src="./public/assets/garlic.png" class="group-hover:scale-125 transition-all ease-in-out duration-500" alt="Garlic" />
+              <div
+                class="info bg-secondary group-hover:invisible font-light group-hover:opacity-0 transition-all ease-in-out duration-300 absolute bottom-3 text-white text-sm rounded-lg px-4 py-2 lg:block hidden md:hidden"
+              >
+                <p class="capitalize font-medium">Hover to discover</p>
+              </div>
               <div
                 class="body w-full lg:opacity-0 group-hover:opacity-100 apper-animation-active transition-all ease-in-out duration-500 gap-6 p-6 bg-black/20 h-full flex flex-col absolute font-normal text-justify md:text-base text-sm z-20 line-clamp-4"
               >
-                <span
-                  class="wrap mt-auto font-semibold lg:text-3xl text-2xl flex flex-col gap-3"
-                >
+                <span class="wrap mt-auto font-semibold lg:text-3xl text-2xl flex flex-col gap-3">
                   <p>Garlic</p>
                   <p class="text-base font-light line-clamp-3">
-                    Garlic adalah produk bawang putih berkualitas tinggi dari
-                    perusahaan pertanian kami, yang mengedepankan standar
-                    produksi terbaik mulai dari pemilihan benih hingga proses
-                    panen dan distribusi.
+                    Garlic adalah produk bawang putih berkualitas tinggi dari perusahaan pertanian kami, yang mengedepankan standar produksi terbaik mulai dari
+                    pemilihan benih hingga proses panen dan distribusi.
                   </p>
                 </span>
-                <a
-                  href="#"
-                  class="px-6 py-2 bg-secondary hover:bg-accent-primary transition-all ease-in-out duration-300 font-medium rounded-lg text-center"
-                >
+                <a href="#" class="px-6 py-2 bg-secondary hover:bg-accent-primary transition-all ease-in-out duration-300 font-medium rounded-lg text-center">
                   See more
                 </a>
               </div>
             </div>
-
             <!-- Right cards container -->
-            <div
-              class="lg:col-span-6 col-span-12 grid md:grid-cols-2 grid-cols-1 gap-4"
-            >
+            <div class="lg:col-span-6 col-span-12 grid md:grid-cols-2 grid-cols-1 gap-4">
               <!-- Card 1 -->
-              <div
-                class="card relative text-white rounded-lg bg-danger overflow-hidden group h-[20rem] flex items-center flex-col justify-center gap-4"
-              >
-                <img
-                  src="./public/assets/Chilli.png"
-                  class="group-hover:scale-125 transition-all ease-in-out duration-500"
-                  alt="Chilli"
-                />
+              <div class="card relative text-white rounded-lg bg-danger overflow-hidden group h-[20rem] flex items-center flex-col justify-center gap-4">
+                <img src="./public/assets/Chilli.png" class="group-hover:scale-125 transition-all ease-in-out duration-500" alt="Chilli" />
+                <!-- Hover Info -->
+                <div
+                  class="info bg-secondary group-hover:invisible font-light group-hover:opacity-0 transition-all ease-in-out duration-300 absolute bottom-3 text-white text-sm rounded-lg px-4 py-2 lg:block hidden md:hidden"
+                >
+                  <p class="capitalize font-medium">Hover to discover</p>
+                </div>
+                <!-- Hover Info End -->
                 <div
                   class="body w-full lg:opacity-0 lg:group-hover:opacity-100 transition-all ease-in-out duration-500 gap-6 p-6 bg-black/20 h-full flex flex-col absolute font-normal text-justify md:text-base text-sm z-20 line-clamp-4"
                 >
-                  <span
-                    class="wrap mt-auto font-semibold lg:text-3xl text-2xl flex flex-col gap-3"
-                  >
+                  <span class="wrap mt-auto font-semibold lg:text-3xl text-2xl flex flex-col gap-3">
                     <p>Chili</p>
                     <p class="text-base font-light line-clamp-3">
-                      Chili adalah cabai pilihan dengan tingkat kepedasan
-                      optimal dan kualitas unggulan, dipanen pada kematangan
-                      ideal dan disimpan dengan suhu terkendali untuk menjaga
-                      kesegarannya.
+                      Chili adalah cabai pilihan dengan tingkat kepedasan optimal dan kualitas unggulan, dipanen pada kematangan ideal dan disimpan dengan suhu
+                      terkendali untuk menjaga kesegarannya.
                     </p>
                   </span>
-                  <a
-                    href="#"
-                    class="px-6 py-2 bg-secondary hover:bg-accent-primary transition-all ease-in-out duration-300 font-medium rounded-lg text-center"
-                  >
+                  <a href="#" class="px-6 py-2 bg-secondary hover:bg-accent-primary transition-all ease-in-out duration-300 font-medium rounded-lg text-center">
                     See more
                   </a>
                 </div>
               </div>
 
               <!-- Card 2 -->
-              <div
-                class="card relative text-white rounded-lg bg-secondary overflow-hidden group h-[20rem] flex items-center flex-col justify-center gap-4"
-              >
-                <img
-                  src="./public/assets/red-onion.png"
-                  class="group-hover:scale-125 transition-all ease-in-out duration-500"
-                  alt="Red Onion"
-                />
+              <div class="card relative text-white rounded-lg bg-secondary overflow-hidden group h-[20rem] flex items-center flex-col justify-center gap-4">
+                <img src="./public/assets/red-onion.png" class="group-hover:scale-125 transition-all ease-in-out duration-500" alt="Red Onion" />
+                <!-- Hover Info -->
+                <div
+                  class="info bg-secondary group-hover:invisible font-light group-hover:opacity-0 transition-all ease-in-out duration-300 absolute bottom-3 text-white text-sm rounded-lg px-4 py-2 lg:block hidden md:hidden"
+                >
+                  <p class="capitalize font-medium">Hover to discover</p>
+                </div>
+                <!-- Hover Info End -->
                 <div
                   class="body w-full lg:opacity-0 lg:group-hover:opacity-100 transition-all ease-in-out duration-500 gap-6 p-6 bg-black/20 h-full flex flex-col absolute font-normal text-justify md:text-base text-sm z-20 line-clamp-4"
                 >
-                  <span
-                    class="wrap mt-auto font-semibold lg:text-3xl text-2xl flex flex-col gap-3"
-                  >
+                  <span class="wrap mt-auto font-semibold lg:text-3xl text-2xl flex flex-col gap-3">
                     <p>Onion</p>
                     <p class="text-base font-light line-clamp-3">
-                      Onion adalah bawang merah pilihan dengan aroma khas dan
-                      daya simpan lama, diproses secara alami untuk menjaga
-                      kualitas dan memberikan cita rasa kuat pada masakan.
+                      Onion adalah bawang merah pilihan dengan aroma khas dan daya simpan lama, diproses secara alami untuk menjaga kualitas dan memberikan cita
+                      rasa kuat pada masakan.
                     </p>
                   </span>
-                  <a
-                    href="#"
-                    class="px-6 py-2 bg-secondary hover:bg-accent-primary transition-all ease-in-out duration-300 font-medium rounded-lg text-center"
-                  >
+                  <a href="#" class="px-6 py-2 bg-secondary hover:bg-accent-primary transition-all ease-in-out duration-300 font-medium rounded-lg text-center">
                     See more
                   </a>
                 </div>
@@ -534,29 +346,25 @@
               <div
                 class="card relative text-white rounded-lg bg-accent-primary overflow-hidden group h-[20rem] flex items-center flex-col justify-center gap-4"
               >
-                <img
-                  src="./public/assets/ginger.png"
-                  class="group-hover:scale-125 transition-all ease-in-out duration-500"
-                  alt="Ginger"
-                />
+                <img src="./public/assets/ginger.png" class="group-hover:scale-125 transition-all ease-in-out duration-500" alt="Ginger" />
+                <!-- Hover Info -->
+                <div
+                  class="info bg-secondary group-hover:invisible font-light group-hover:opacity-0 transition-all ease-in-out duration-300 absolute bottom-3 text-white text-sm rounded-lg px-4 py-2 lg:block hidden md:hidden"
+                >
+                  <p class="capitalize font-medium">Hover to discover</p>
+                </div>
+                <!-- Hover Info End -->
                 <div
                   class="body w-full lg:opacity-0 lg:group-hover:opacity-100 transition-all ease-in-out duration-500 gap-6 p-6 bg-black/20 h-full flex flex-col absolute font-normal text-justify md:text-base text-sm z-20 line-clamp-4"
                 >
-                  <span
-                    class="wrap mt-auto font-semibold lg:text-3xl text-2xl flex flex-col gap-3"
-                  >
+                  <span class="wrap mt-auto font-semibold lg:text-3xl text-2xl flex flex-col gap-3">
                     <p>Ginger</p>
                     <p class="text-base font-light line-clamp-3">
-                      Ginger adalah jahe berkualitas tinggi yang kaya manfaat
-                      kesehatan, memiliki aroma dan rasa hangat yang kuat, serta
-                      dipanen dengan standar terbaik untuk menjaga
-                      kebersihannya.
+                      Ginger adalah jahe berkualitas tinggi yang kaya manfaat kesehatan, memiliki aroma dan rasa hangat yang kuat, serta dipanen dengan standar
+                      terbaik untuk menjaga kebersihannya.
                     </p>
                   </span>
-                  <a
-                    href="#"
-                    class="px-6 py-2 bg-secondary hover:bg-accent-primary transition-all ease-in-out duration-300 font-medium rounded-lg text-center"
-                  >
+                  <a href="#" class="px-6 py-2 bg-secondary hover:bg-accent-primary transition-all ease-in-out duration-300 font-medium rounded-lg text-center">
                     See more
                   </a>
                 </div>
@@ -566,68 +374,45 @@
               <div
                 class="card relative text-white rounded-lg bg-accent-secondary overflow-hidden group h-[20rem] flex items-center flex-col justify-center gap-4"
               >
-                <img
-                  src="./public/assets/potato.png"
-                  class="group-hover:scale-125 transition-all ease-in-out duration-500"
-                  alt="Potato"
-                />
+                <img src="./public/assets/potato.png" class="group-hover:scale-125 transition-all ease-in-out duration-500" alt="Potato" />
+                <!-- Hover Info -->
+                <div
+                  class="info bg-secondary group-hover:invisible font-light group-hover:opacity-0 transition-all ease-in-out duration-300 absolute bottom-3 text-white text-sm rounded-lg px-4 py-2 lg:block hidden md:hidden"
+                >
+                  <p class="capitalize font-medium">Hover to discover</p>
+                </div>
+                <!-- Hover Info End -->
                 <div
                   class="body w-full lg:opacity-0 lg:group-hover:opacity-100 transition-all ease-in-out duration-500 gap-6 p-6 bg-black/20 h-full flex flex-col absolute font-normal text-justify md:text-base text-sm z-20 line-clamp-4"
                 >
-                  <span
-                    class="wrap mt-auto font-semibold lg:text-3xl text-2xl flex flex-col gap-3"
-                  >
+                  <span class="wrap mt-auto font-semibold lg:text-3xl text-2xl flex flex-col gap-3">
                     <p>Potato</p>
                     <p class="text-base font-light line-clamp-3">
-                      Potato adalah kentang berkualitas tinggi dengan tekstur
-                      lembut dan kandungan nutrisi optimal, dipilih secara ketat
-                      untuk memastikan ukuran seragam dan kesegaran maksimal.
+                      Potato adalah kentang berkualitas tinggi dengan tekstur lembut dan kandungan nutrisi optimal, dipilih secara ketat untuk memastikan ukuran
+                      seragam dan kesegaran maksimal.
                     </p>
                   </span>
-                  <a
-                    href="#"
-                    class="px-6 py-2 bg-secondary hover:bg-accent-primary transition-all ease-in-out duration-300 font-medium rounded-lg text-center"
-                  >
+                  <a href="#" class="px-6 py-2 bg-secondary hover:bg-accent-primary transition-all ease-in-out duration-300 font-medium rounded-lg text-center">
                     See more
                   </a>
                 </div>
               </div>
             </div>
-
-            <!-- Pagination -->
-            <div class="pagginatin-wrap !mt-8 col-span-12">
-              <div
-                class="pagination-mod-6 flex items-center w-fit justify-center gap-2"
-              ></div>
-            </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- company short intro -->
-    <section
-      id="mod-2"
-      class="flex flex-col relative items-center justify-center overflow-hidden lg:py-24 py-14"
-    >
-      <!-- <div
-        class="box-overlay md:absolute hidden bg-[#D9D9D9]/40 z-50 top-0 left-0 w-[40rem] h-[30rem]"
-      ></div> -->
-      <div
-        class="container flex flex-col items-center lg:space-y-24 space-y-12 w-full relative z-20"
-      >
-        <p
-          class="text-secondary lg:text-5xl md:text-3xl text-2xl md:text-start font-semibold text-center leading-relaxed"
-        >
+    <!-- Short intro for industiral product & Agrucultural product -->
+    <section id="content-3" class="flex flex-col relative items-center justify-center overflow-hidden lg:py-24 py-14">
+      <div class="container flex flex-col items-center lg:space-y-24 space-y-12 w-full relative z-20">
+        <!-- Title -->
+        <p class="text-secondary lg:text-5xl md:text-3xl text-2xl md:text-start font-semibold text-center leading-relaxed">
           We harness nature's power to enrich the future.
         </p>
-        <div
-          class="swiper mod-2-swiper text-white"
-          style="
-            --swiper-navigation-color: #fff;
-            --swiper-pagination-color: #fff;
-          "
-        >
+        <!-- Title End -->
+        <div class="swiper mod-2-swiper text-white" style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff">
           <div class="swiper-wrapper">
+            <!-- Item Slide -->
             <div class="swiper-slide">
               <div
                 class="card rounded-3xl overflow-hidden group lg:h-[25rem] md:h-[22rem] h-[18rem] w-full flex items-center relative flex-col justify-center lg:px-16 px-8 lg:py-12 py-6 gap-10 before:absolute before:inset-0 before:bg-black/60 before:z-10"
@@ -637,40 +422,22 @@
                   class="absolute inset-0 w-full h-full group-hover:scale-125 transition-all ease-in-out duration-500 object-cover z-0"
                   alt="Background"
                 />
-                <div
-                  class="header flex items-center justify-between w-full relative z-20"
-                >
-                  <p
-                    class="lg:text-xl md:text-lg text-base uppercase font-semibold"
-                  >
-                    Agricultural Products
-                  </p>
-                  <span class="lg:w-[3rem] w-[2rem]"
-                    ><img src="./public/assets/ranch.svg" alt=""
-                  /></span>
+                <div class="header flex items-center justify-between w-full relative z-20">
+                  <p class="lg:text-xl md:text-lg text-base uppercase font-semibold">Agricultural Products</p>
+                  <span class="lg:w-[3rem] w-[2rem]"><img src="./public/assets/ranch.svg" alt="" /></span>
                 </div>
-                <div
-                  class="body w-full md:text-base text-sm relative z-20 line-clamp-4"
-                >
-                  We aim to increase the productivity and quality of Turkish
-                  agriculture with our rich fertilizer range. We provide
-                  reliable and innovative products for bountiful harvests by
-                  offering solutions suitable for all types of plants and soil,
-                  from classic to special.
+                <div class="body w-full md:text-base text-sm relative z-20 line-clamp-4">
+                  We aim to increase the productivity and quality of Turkish agriculture with our rich fertilizer range. We provide reliable and innovative
+                  products for bountiful harvests by offering solutions suitable for all types of plants and soil, from classic to special.
                 </div>
                 <div class="footer w-full relative z-20 mt-auto">
                   <a href="">
                     <button
                       class="relative cursor-pointer overflow-hidden md:px-6 px-4 md:py-2.5 py-2 bg-secondary rounded-full text-white hover:bg-accent-primary font-medium transition-all duration-300 active:scale-95 group"
                     >
-                      <span
-                        class="relative z-30 md:text-lg text-sm uppercase flex items-center gap-3"
+                      <span class="relative z-30 md:text-lg text-sm uppercase flex items-center gap-3"
                         >Review
-                        <img
-                          src="./public/assets/right-arrow.svg"
-                          class="md:w-[2rem] w-[1.5rem]"
-                          alt=""
-                        />
+                        <img src="./public/assets/right-arrow.svg" class="md:w-[2rem] w-[1.5rem]" alt="" />
                       </span>
                     </button>
                   </a>
@@ -686,37 +453,21 @@
                   class="absolute inset-0 w-full h-full group-hover:scale-125 transition-all ease-in-out duration-500 object-cover z-0"
                   alt="Background"
                 />
-                <div
-                  class="header flex items-center justify-between w-full relative z-20"
-                >
-                  <p
-                    class="lg:text-xl md:text-lg text-base uppercase font-semibold"
-                  >
-                    Industrial Products
-                  </p>
-                  <span class="lg:w-[3rem] w-[2rem]"
-                    ><img src="./public/assets/industrial.svg" alt=""
-                  /></span>
+                <div class="header flex items-center justify-between w-full relative z-20">
+                  <p class="lg:text-xl md:text-lg text-base uppercase font-semibold">Industrial Products</p>
+                  <span class="lg:w-[3rem] w-[2rem]"><img src="./public/assets/industrial.svg" alt="" /></span>
                 </div>
-                <div
-                  class="body w-full md:text-base text-sm relative z-20 line-clamp-4"
-                >
-                  With our extensive range of industrial products, we continue
-                  to support Turkish industry.
+                <div class="body w-full md:text-base text-sm relative z-20 line-clamp-4">
+                  With our extensive range of industrial products, we continue to support Turkish industry.
                 </div>
                 <div class="footer w-full relative z-20 mt-auto">
                   <a href="">
                     <button
                       class="relative cursor-pointer overflow-hidden md:px-6 px-4 md:py-2.5 py-2 bg-secondary rounded-full text-white hover:bg-accent-primary font-medium transition-all duration-300 active:scale-95 group"
                     >
-                      <span
-                        class="relative z-30 md:text-lg text-sm uppercase flex items-center gap-3"
+                      <span class="relative z-30 md:text-lg text-sm uppercase flex items-center gap-3"
                         >Review
-                        <img
-                          src="./public/assets/right-arrow.svg"
-                          class="md:w-[2rem] w-[1.5rem]"
-                          alt=""
-                        />
+                        <img src="./public/assets/right-arrow.svg" class="md:w-[2rem] w-[1.5rem]" alt="" />
                       </span>
                     </button>
                   </a>
@@ -732,225 +483,135 @@
                   class="absolute inset-0 w-full h-full group-hover:scale-125 transition-all ease-in-out duration-500 object-cover z-0"
                   alt="Background"
                 />
-                <div
-                  class="header flex items-center justify-between w-full relative z-20"
-                >
-                  <p
-                    class="lg:text-xl md:text-lg text-base uppercase font-semibold"
-                  >
-                    Agricultural Products
-                  </p>
-                  <span class="lg:w-[3rem] w-[2rem]"
-                    ><img src="./public/assets/ranch.svg" alt=""
-                  /></span>
+                <div class="header flex items-center justify-between w-full relative z-20">
+                  <p class="lg:text-xl md:text-lg text-base uppercase font-semibold">Agricultural Products</p>
+                  <span class="lg:w-[3rem] w-[2rem]"><img src="./public/assets/ranch.svg" alt="" /></span>
                 </div>
-                <div
-                  class="body w-full md:text-base text-sm relative z-20 line-clamp-4"
-                >
-                  We aim to increase the productivity and quality of Turkish
-                  agriculture with our rich fertilizer range. We provide
-                  reliable and innovative products for bountiful harvests by
-                  offering solutions suitable for all types of plants and soil,
-                  from classic to special.
+                <div class="body w-full md:text-base text-sm relative z-20 line-clamp-4">
+                  We aim to increase the productivity and quality of Turkish agriculture with our rich fertilizer range. We provide reliable and innovative
+                  products for bountiful harvests by offering solutions suitable for all types of plants and soil, from classic to special.
                 </div>
                 <div class="footer w-full relative z-20 mt-auto">
                   <a href="">
                     <button
                       class="relative cursor-pointer overflow-hidden md:px-6 px-4 md:py-2.5 py-2 bg-secondary rounded-full text-white hover:bg-accent-primary font-medium transition-all duration-300 active:scale-95 group"
                     >
-                      <span
-                        class="relative z-30 md:text-lg text-sm uppercase flex items-center gap-3"
+                      <span class="relative z-30 md:text-lg text-sm uppercase flex items-center gap-3"
                         >Review
-                        <img
-                          src="./public/assets/right-arrow.svg"
-                          class="md:w-[2rem] w-[1.5rem]"
-                          alt=""
-                        />
+                        <img src="./public/assets/right-arrow.svg" class="md:w-[2rem] w-[1.5rem]" alt="" />
                       </span>
                     </button>
                   </a>
                 </div>
               </div>
             </div>
+            <!-- Item Slide end -->
           </div>
+          <!-- Paggination -->
           <div class="pagginatin-wrap !mt-8">
-            <div
-              class="pagination-mod-2 flex items-center w-fit lg:justify-end justify-center gap-2"
-            ></div>
+            <div class="pagination-mod-2 flex items-center w-fit lg:justify-end justify-center gap-2"></div>
           </div>
+          <!-- Paggination End -->
         </div>
       </div>
     </section>
     <!-- Agricultrul provider-->
-    <section class="relative text-secondary overflow-hidden lg:py-24 py-14">
-      <div
-        class="container lg:text-5xl md:text-4xl text-2xl flex flex-col md:gap-40 gap-20 justify-center items-center"
-      >
-        <div class="wrap">
-          <p class="md:text-2xl text-base text-center font-light uppercase">
-            -What Steers Our Services-
-          </p>
-          <p class="leading-normal text-center font-semibold capitalize">
-            Quality agricultural provider
-          </p>
+    <section id="content-4" class="relative text-secondary overflow-hidden lg:py-24 py-14">
+      <div class="container lg:text-5xl md:text-4xl text-2xl flex flex-col md:gap-40 gap-20 justify-center items-center">
+        <div class="wrapper-content">
+          <!-- Subtitle -->
+          <p class="md:text-2xl text-base text-center font-light uppercase">-What Steers Our Services-</p>
+          <!-- Title -->
+          <p class="leading-normal text-center font-semibold capitalize">Quality agricultural provider</p>
         </div>
-        <div
-          class="md:grid grid-cols-3 flex flex-col md:gap-20 gap-10 items-start"
-        >
-          <div
-            class="wrap flex rounded-lg text-secondary items-center text-center w-full flex-col gap-3"
-          >
-            <div
-              class="card md:p-12 p-10 bg-accent-primary rounded-full md:w-[13rem] w-[11rem] md:h-[13rem] h-[11rem] overflow-hidden"
-            >
+        <div class="md:grid grid-cols-3 flex flex-col md:gap-20 gap-10 items-start">
+          <div class="card-wrap flex rounded-lg text-secondary items-center text-center w-full flex-col gap-3">
+            <div class="card md:p-12 p-10 bg-accent-primary rounded-full md:w-[13rem] w-[11rem] md:h-[13rem] h-[11rem] overflow-hidden">
               <img src="./public/assets/Icon-1.png" class="w-full" alt="" />
             </div>
-
-            <p class="font-semibold md:text-xl text-lg capitalize">
-              manufacturers and suppliers
-            </p>
-            <p class="md:text-lg text-base">
-              We manage all processes without intermediaries, from plantation,
-              processing to delivery to your hands
-            </p>
+            <p class="font-semibold md:text-xl text-lg capitalize">manufacturers and suppliers</p>
+            <p class="md:text-lg text-base">We manage all processes without intermediaries, from plantation, processing to delivery to your hands</p>
           </div>
-          <div
-            class="wrap flex rounded-lg text-secondary items-center text-center w-full flex-col gap-3"
-          >
-            <div
-              class="card md:p-12 p-10 bg-accent-primary rounded-full md:w-[13rem] w-[11rem] md:h-[13rem] h-[11rem] overflow-hidden"
-            >
+          <div class="card-wrap flex rounded-lg text-secondary items-center text-center w-full flex-col gap-3">
+            <div class="card md:p-12 p-10 bg-accent-primary rounded-full md:w-[13rem] w-[11rem] md:h-[13rem] h-[11rem] overflow-hidden">
               <img src="./public/assets/Icon-3.png" class="w-full" alt="" />
             </div>
 
-            <p class="font-semibold md:text-xl text-lg capitalize">
-              High-Quality Products
-            </p>
-            <p class="md:text-lg text-base">
-              With a Quality System, we focus on providing high-quality, clean,
-              and safe products.
-            </p>
+            <p class="font-semibold md:text-xl text-lg capitalize">High-Quality Products</p>
+            <p class="md:text-lg text-base">With a Quality System, we focus on providing high-quality, clean, and safe products.</p>
           </div>
-          <div
-            class="wrap flex rounded-lg text-secondary items-center text-center w-full flex-col gap-3"
-          >
-            <div
-              class="card md:p-12 p-10 bg-accent-primary rounded-full md:w-[13rem] w-[11rem] md:h-[13rem] h-[11rem] overflow-hidden"
-            >
+          <div class="card-wrap flex rounded-lg text-secondary items-center text-center w-full flex-col gap-3">
+            <div class="card md:p-12 p-10 bg-accent-primary rounded-full md:w-[13rem] w-[11rem] md:h-[13rem] h-[11rem] overflow-hidden">
               <img src="./public/assets/Icon-6.png" class="w-full" alt="" />
             </div>
 
-            <p class="font-semibold md:text-xl text-lg capitalize">
-              Competitive Prices
-            </p>
-            <p class="md:text-lg text-base">
-              As a producer, importer, and direct supplier, we are able to
-              provide the best prices for our customers.
-            </p>
+            <p class="font-semibold md:text-xl text-lg capitalize">Competitive Prices</p>
+            <p class="md:text-lg text-base">As a producer, importer, and direct supplier, we are able to provide the best prices for our customers.</p>
           </div>
-          <div
-            class="wrap flex rounded-lg text-secondary items-center text-center w-full flex-col gap-3"
-          >
-            <div
-              class="card md:p-12 p-10 bg-accent-primary rounded-full md:w-[13rem] w-[11rem] md:h-[13rem] h-[11rem] overflow-hidden"
-            >
+          <div class="card-wrap flex rounded-lg text-secondary items-center text-center w-full flex-col gap-3">
+            <div class="card md:p-12 p-10 bg-accent-primary rounded-full md:w-[13rem] w-[11rem] md:h-[13rem] h-[11rem] overflow-hidden">
               <img src="./public/assets/Icon-7.png" class="w-full" alt="" />
             </div>
 
-            <p class="font-semibold md:text-xl text-lg capitalize">
-              Modern Technology
-            </p>
-            <p class="md:text-lg text-base">
-              Our products are processed using modern technology and
-              high-quality production standards.
-            </p>
+            <p class="font-semibold md:text-xl text-lg capitalize">Modern Technology</p>
+            <p class="md:text-lg text-base">Our products are processed using modern technology and high-quality production standards.</p>
           </div>
-          <div
-            class="wrap flex rounded-lg text-secondary items-center text-center w-full flex-col gap-3"
-          >
-            <div
-              class="card md:p-12 p-10 bg-accent-primary rounded-full md:w-[13rem] w-[11rem] md:h-[13rem] h-[11rem] overflow-hidden"
-            >
+          <div class="card-wrap flex rounded-lg text-secondary items-center text-center w-full flex-col gap-3">
+            <div class="card md:p-12 p-10 bg-accent-primary rounded-full md:w-[13rem] w-[11rem] md:h-[13rem] h-[11rem] overflow-hidden">
               <img src="./public/assets/Icon-5.png" class="w-full" alt="" />
             </div>
 
-            <p class="font-semibold md:text-xl text-lg capitalize">
-              Large Capacity
-            </p>
-            <p class="md:text-lg text-base">
-              We own our own product processing factory, enabling us to produce
-              in large quantities with specifications.
-            </p>
+            <p class="font-semibold md:text-xl text-lg capitalize">Large Capacity</p>
+            <p class="md:text-lg text-base">We own our own product processing factory, enabling us to produce in large quantities with specifications.</p>
           </div>
-          <div
-            class="wrap flex rounded-lg text-secondary items-center text-center w-full flex-col gap-3"
-          >
-            <div
-              class="card md:p-12 p-10 bg-accent-primary rounded-full md:w-[13rem] w-[11rem] md:h-[13rem] h-[11rem] overflow-hidden"
-            >
+          <div class="card-wrap flex rounded-lg text-secondary items-center text-center w-full flex-col gap-3">
+            <div class="card md:p-12 p-10 bg-accent-primary rounded-full md:w-[13rem] w-[11rem] md:h-[13rem] h-[11rem] overflow-hidden">
               <img src="./public/assets/Icon-2.png" class="w-full" alt="" />
             </div>
-
-            <p class="font-semibold md:text-xl text-lg capitalize">
-              Reliable Logistics System
-            </p>
+            <p class="font-semibold md:text-xl text-lg capitalize">Reliable Logistics System</p>
             <p class="md:text-lg text-base">
-              We have built a strong network of cooperation with various
-              logistics transportation companies, both global and local.
+              We have built a strong network of cooperation with various logistics transportation companies, both global and local.
             </p>
           </div>
         </div>
       </div>
     </section>
-    <!-- pilosopi / project / counting-->
-    <section
-      id="mod-4"
-      class="flex flex-col relative items-center justify-center overflow-hidden lg:py-24 py-14"
-    >
+    <!-- pilosopi / project / counting / Maps-->
+    <section id="content-5" class="flex flex-col relative items-center justify-center overflow-hidden lg:py-24 py-14">
       <div class="container flex flex-col md:gap-40 gap-20">
-        <div
-          class="company-part lg:text-5xl md:text-3xl text-xl font-medium flex flex-col lg:space-y-24 md:space-y-14 space-y-8 text-secondary"
-        >
+        <!-- Counter number content -->
+        <div class="company-part lg:text-5xl md:text-3xl text-xl font-medium flex flex-col lg:space-y-24 md:space-y-14 space-y-8 text-secondary">
           <div class="wrap space-y-3">
             <p class="leading-normal font-light">
-              <span class="font-semibold">(Company name) </span>in numbers with
-              its continuously rising success each year, is
+              <span class="font-semibold">(Company name) </span>in numbers with its continuously rising success each year, is
               <span class="font-semibold">(country name)</span>
               fertilizer producers.
             </p>
           </div>
           <div class="wrap flex md:justify-between flex-wrap gap-14">
             <div class="numbering flex flex-col gap-2">
-              <div
-                class="wrap flex items-center gap-3 lg:text-7xl md:text-5xl text-4xl"
-              >
+              <div class="wrap flex items-center gap-3 lg:text-7xl md:text-5xl text-4xl">
                 <p class="num" data-val="100">0</p>
                 <p class="">+</p>
               </div>
               <p class="uppercase md:text-lg text-sm">employee</p>
             </div>
             <div class="numbering flex flex-col gap-2">
-              <div
-                class="wrap flex items-center gap-3 lg:text-7xl md:text-5xl text-4xl"
-              >
+              <div class="wrap flex items-center gap-3 lg:text-7xl md:text-5xl text-4xl">
                 <p class="num" data-val="20">0</p>
                 <p class="">+</p>
               </div>
               <p class="uppercase md:text-lg text-sm">FACILITY</p>
             </div>
             <div class="numbering flex flex-col gap-2">
-              <div
-                class="wrap flex items-center gap-3 lg:text-7xl md:text-5xl text-4xl"
-              >
+              <div class="wrap flex items-center gap-3 lg:text-7xl md:text-5xl text-4xl">
                 <p class="num" data-val="50">0</p>
                 <p class="">+</p>
               </div>
               <p class="uppercase md:text-lg text-sm">Warehouse</p>
             </div>
             <div class="numbering flex flex-col gap-2">
-              <div
-                class="wrap flex items-center gap-3 lg:text-7xl md:text-5xl text-4xl"
-              >
+              <div class="wrap flex items-center gap-3 lg:text-7xl md:text-5xl text-4xl">
                 <p class="num" data-val="20">0</p>
                 <p>+</p>
               </div>
@@ -958,22 +619,19 @@
             </div>
           </div>
         </div>
+        <!-- Maps -->
         <div class="map-wrap">
           <img src="./public/assets/World-map-2.png" class="" alt="" />
           <div class="country-list"></div>
         </div>
-        <!-- Seperator Content -->
-        <div
-          class="wrap flex flex-col relative items-center w-full justify-center overflow-hidden"
-        >
+        <!-- Contact us ads -->
+        <div class="wrap flex flex-col relative items-center w-full justify-center overflow-hidden">
           <!-- Overlay Gradient -->
           <div
             class="font-semibold flex lg:flex-row bg-accent-primary text-white md:p-20 p-10 rounded-lg lg:gap-0 gap-6 flex-col justify-center items-center w-full lg:justify-between relative z-10"
           >
             <div class="wrap flex items-center gap-20">
-              <p
-                class="md:text-3xl text-xl text md:text-start capitalize text-center font-medium leading-normal tracking-wide"
-              >
+              <p class="md:text-3xl text-xl text md:text-start capitalize text-center font-medium leading-normal tracking-wide">
                 Bulk Agriculture supplier you can trust!
               </p>
             </div>
@@ -987,13 +645,10 @@
         </div>
       </div>
     </section>
-    <!-- Maps -->
-    <section id="mod-5" class="overflow-hidden">
-      <div
-        class="slider w-[var(--slider-width)] bg-transparent h-[var(--slider-height)]"
-        reverse="true"
-        style="--quantity: 9"
-      >
+    <!-- Image Slider Dynamic content -->
+    <section id="content-6" class="overflow-hidden">
+      <!-- Mush be understand css highly to be able to read this code otherwise dont customize it ! -->
+      <div class="slider w-[var(--slider-width)] bg-transparent h-[var(--slider-height)]" reverse="true" style="--quantity: 9">
         <div class="list">
           <div class="item" style="--position: 1">
             <img src="./public/assets/image-29.png" class="rounded-lg" alt="" />
@@ -1024,11 +679,7 @@
           </div>
         </div>
       </div>
-      <div
-        class="slider w-[var(--slider-width)] h-[var(--slider-height)]"
-        reverse="true"
-        style="--quantity: 9"
-      >
+      <div class="slider w-[var(--slider-width)] h-[var(--slider-height)]" reverse="true" style="--quantity: 9">
         <div class="list">
           <div class="item" style="--position: 1">
             <img src="./public/assets/image-29.png" class="rounded-lg" alt="" />
@@ -1060,29 +711,16 @@
         </div>
       </div>
     </section>
-    <section
-      id="mod-3"
-      class="flex flex-col relative items-center justify-center overflow-hidden md:py-36 py-14 bg-accent-primary"
-    >
+    <!-- Global Content -->
+    <section id="content-7" class="flex flex-col relative items-center justify-center overflow-hidden md:py-36 py-14 bg-accent-primary">
       <!-- Overlay Gradient -->
-      <div
-        class="absolute inset-0 bg-gradient-to-r from-[#e92028]/[64%] to-[#e92028]/[16%] pointer-events-none"
-      ></div>
-
-      <div
-        class="container font-semibold flex lg:flex-row lg:gap-0 gap-6 flex-col justify-center items-center w-full lg:justify-between relative z-10"
-      >
+      <div class="absolute inset-0 bg-gradient-to-r from-[#e92028]/[64%] to-[#e92028]/[16%] pointer-events-none"></div>
+      <div class="container font-semibold flex lg:flex-row lg:gap-0 gap-6 flex-col justify-center items-center w-full lg:justify-between relative z-10">
         <div class="wrap flex items-center gap-20 md:w-[80%]">
-          <div
-            class="wrap rounded-full bg-white md:w-[4rem] w-[20%] lg:flex hidden items-center justify-center p-3.5 overflow-hidden"
-          >
+          <div class="wrap rounded-full bg-white md:w-[4rem] w-[20%] lg:flex hidden items-center justify-center p-3.5 overflow-hidden">
             <img src="./public/assets/growth 1.svg" class="w-full" alt="" />
           </div>
-          <p
-            class="text-white font-jhonstown md:text-4xl text-2xl md:text-start text-center font-normal leading-normal"
-          >
-            We are Leader in Agriculture Market
-          </p>
+          <p class="text-white font-jhonstown md:text-4xl text-2xl md:text-start text-center font-normal leading-normal">We are Leader in Agriculture Market</p>
         </div>
         <a
           href=""
@@ -1093,103 +731,50 @@
       </div>
 
       <!-- Background Image -->
-      <img
-        src="./public/assets/style-1.png"
-        class="w-full h-full absolute inset-0 opacity-20 object-cover"
-        alt=""
-      />
+      <img src="./public/assets/style-1.png" class="w-full h-full absolute inset-0 opacity-20 object-cover" alt="" />
     </section>
-    <div
-      class="fixed bottom-4 right-4 z-50 rounded-full"
-      id="quickLinksContainer"
-    >
+    <!-- Floating Button -->
+    <div class="fixed bottom-4 right-4 z-50 rounded-full" id="quickLinksContainer">
       <!-- Hidden links container -->
-      <div
-        class="flex flex-col gap-2 transition-all duration-300 ease-out absolute bottom-full right-0 mb-2 max-h-0 opacity-0 overflow-hidden"
-        id="quickLinks"
-      >
+      <div class="flex flex-col gap-2 transition-all duration-300 ease-out absolute bottom-full right-0 mb-2 max-h-0 opacity-0 overflow-hidden" id="quickLinks">
         <!-- Your quick link items remain the same -->
-        <div
-          class="quick-link bg-secondary md:p-4 p-1 rounded-full cursor-pointer"
-        >
-          <img
-            src="./public/assets/phone.svg"
-            class="quick-icon md:w-[3rem] w-[2rem]"
-            alt="Call us"
-          />
+        <div class="quick-link bg-secondary md:p-4 p-1 rounded-full cursor-pointer">
+          <img src="./public/assets/phone.svg" class="quick-icon md:w-[3rem] w-[2rem]" alt="Call us" />
         </div>
-        <div
-          class="quick-link bg-secondary md:p-4 p-1 rounded-full cursor-pointer"
-        >
-          <img
-            src="./public/assets/email.svg"
-            class="quick-icon md:w-[3rem] w-[2rem]"
-            alt="Call us"
-          />
+        <div class="quick-link bg-secondary md:p-4 p-1 rounded-full cursor-pointer">
+          <img src="./public/assets/email.svg" class="quick-icon md:w-[3rem] w-[2rem]" alt="Call us" />
         </div>
-        <div
-          class="quick-link bg-secondary md:p-4 p-1 rounded-full cursor-pointer"
-        >
-          <img
-            src="./public/assets/we-chat.svg"
-            class="quick-icon md:w-[3rem] w-[2rem]"
-            alt="Call us"
-          />
+        <div class="quick-link bg-secondary md:p-4 p-1 rounded-full cursor-pointer">
+          <img src="./public/assets/we-chat.svg" class="quick-icon md:w-[3rem] w-[2rem]" alt="Call us" />
         </div>
-        <div
-          class="quick-link bg-secondary md:p-4 p-1 rounded-full cursor-pointer"
-        >
-          <img
-            src="./public/assets/wa.svg"
-            class="quick-icon md:w-[3rem] w-[2rem]"
-            alt="Call us"
-          />
+        <div class="quick-link bg-secondary md:p-4 p-1 rounded-full cursor-pointer">
+          <img src="./public/assets/wa.svg" class="quick-icon md:w-[3rem] w-[2rem]" alt="Call us" />
         </div>
         <!-- Other link items... -->
       </div>
 
       <!-- Trigger button remains the same -->
-      <div
-        class="quick-link bg-secondary md:p-4 p-1 rounded-full cursor-pointer animate-wiggle"
-        id="triggerButton"
-      >
-        <img
-          src="./public/assets/hand.svg"
-          class="md:w-[3rem] w-[2rem]"
-          alt="Quick contacts"
-        />
+      <div class="quick-link bg-secondary md:p-4 p-1 rounded-full cursor-pointer animate-wiggle" id="triggerButton">
+        <img src="./public/assets/hand.svg" class="md:w-[3rem] w-[2rem]" alt="Quick contacts" />
       </div>
     </div>
+    <!-- Floating Button End -->
   </body>
+  <!-- Footer -->
   <footer class="bg-white text-secondary">
-    <div
-      class="container flex flex-col lg:grid md:gap-24 lg:py-20 gap-12 py-10 grid-cols-12"
-    >
+    <div class="container flex flex-col lg:grid md:gap-24 lg:py-20 gap-12 py-10 grid-cols-12">
       <!-- About Section -->
       <div class="col-span-6 flex flex-col gap-6">
         <h2 class="font-semibold md:text-2xl text-xl">About us</h2>
         <p class="font-light md:text-lg text-base">
-          Lorem ipsum dolor sit amet, adipiscing elit. In hac habitasse platea
-          dictumst. Duis porta, quam ut finibus ultrices.
+          Lorem ipsum dolor sit amet, adipiscing elit. In hac habitasse platea dictumst. Duis porta, quam ut finibus ultrices.
         </p>
         <hr class="border-secondary" />
         <div class="wrap flex items-center gap-6">
           <div class="wrap flex items-center gap-2">
-            <img
-              src="./public/assets/facebook.svg"
-              class="p-2 w-10 bg-accent-primary rounded-full"
-              alt=""
-            />
-            <img
-              src="./public/assets/youtube.svg"
-              class="p-2 w-10 bg-accent-primary rounded-full"
-              alt=""
-            />
-            <img
-              src="./public/assets/linkedIn.svg"
-              class="p-2 w-10 bg-accent-primary rounded-full"
-              alt=""
-            />
+            <img src="./public/assets/facebook.svg" class="p-2 w-10 bg-accent-primary rounded-full" alt="" />
+            <img src="./public/assets/youtube.svg" class="p-2 w-10 bg-accent-primary rounded-full" alt="" />
+            <img src="./public/assets/linkedIn.svg" class="p-2 w-10 bg-accent-primary rounded-full" alt="" />
           </div>
         </div>
       </div>
@@ -1208,9 +793,7 @@
       <!-- Newsletter Section -->
       <div class="col-span-6 md:col-span-3 flex flex-col gap-6">
         <h2 class="font-semibold md:text-2xl text-xl">Newsletter</h2>
-        <p class="font-light md:text-lg text-base">
-          Subscribe to our weekly Newsletter and receive updates via email.
-        </p>
+        <p class="font-light md:text-lg text-base">Subscribe to our weekly Newsletter and receive updates via email.</p>
         <form class="w-full max-w-xs">
           <div class="flex gap-2">
             <input
@@ -1230,29 +813,14 @@
       </div>
     </div>
     <hr />
-    <p class="mx-auto text-center py-12 px-4 text-accent-primary font-semibold">
-      Copyright ©(Company Name). All Right Reserved.
-    </p>
+    <p class="mx-auto text-center py-12 px-4 text-accent-primary font-semibold">Copyright ©(Company Name). All Right Reserved.</p>
   </footer>
+  <!-- Footer End -->
+  <!-- Js Required -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./public/js/swiper.js"></script>
-  <script>
-    function toggleMobileMenu() {
-      const mobileMenu = document.getElementById("mobile-menu");
-      mobileMenu.classList.toggle("max-h-0");
-      mobileMenu.classList.toggle("max-h-screen");
-      mobileMenu.classList.toggle("py-2");
-      mobileMenu.classList.toggle("shadow-2xl");
-      mobileMenu.classList.toggle("rounded-b-lg");
-    }
-
-    function toggleMobileDropdown() {
-      const dropdown = document.getElementById("mobile-dropdown");
-      dropdown.classList.toggle("max-h-0");
-      dropdown.classList.toggle("max-h-45");
-      dropdown.classList.toggle("opacity-100");
-    }
-  </script>
+  <script src="./public/js/navbar.js"></script>
   <script src="./public/js/counter.js"></script>
   <script src="./public/js/quick-link.js"></script>
+  <!-- Js Required End -->
 </html>
